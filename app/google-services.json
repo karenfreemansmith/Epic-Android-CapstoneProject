@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "628125676912",
+    "firebase_url": "https://poetic-analog-146213.firebaseio.com",
+    "project_id": "poetic-analog-146213",
+    "storage_bucket": "poetic-analog-146213.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628125676912:android:ed2588861ed5664d",
+        "android_client_info": {
+          "package_name": "com.karenfreemansmith.flashcards"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628125676912-hfigsmpp025ruv1b5arjcoqam0q8vho2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karenfreemansmith.flashcards",
+            "certificate_hash": "031982766C87A6AFE1949AFA44B65064F0C5089E"
+          }
+        },
+        {
+          "client_id": "628125676912-ocbo4vrhbieslgfthev0hnp4du3v6bdl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoA-lYk06sLj8G_Wz8T_JVcLlGrYCk5wQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628125676912-ocbo4vrhbieslgfthev0hnp4du3v6bdl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
