@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Easy"
-        android:id="@+id/button3"
+        android:id="@+id/buttonEasy"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="81dp" />
@@ -31,8 +31,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Medium"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
+        android:id="@+id/buttonMedium"
+        android:layout_below="@+id/buttonEasy"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -40,8 +40,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Difficult"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button4"
+        android:id="@+id/buttonDifficult"
+        android:layout_below="@+id/buttonMedium"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="View High Scores"
-        android:id="@+id/button7"
+        android:id="@+id/buttonHighScores"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 

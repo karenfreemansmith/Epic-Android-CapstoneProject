@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Play Again"
-        android:id="@+id/button"
+        android:id="@+id/buttonPlayAgain"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
@@ -32,5 +32,5 @@
         android:id="@+id/listView"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView"
-        android:layout_above="@+id/button" />
+        android:layout_above="@+id/buttonPlayAgain" />
 </RelativeLayout>
