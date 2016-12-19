@@ -1,8 +1,10 @@
-package com.karenfreemansmith.flashcards;
+package com.karenfreemansmith.flashcards.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.karenfreemansmith.flashcards.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
