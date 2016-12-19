@@ -1,0 +1,85 @@
+[
+	{	"name": "Barrak Obama",
+		"title": "President of the United States",
+		"country": "United States of America",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Official_portrait_of_Barack_Obama.jpg", 
+		"office": "", "history": "", 
+		"flag": "", "map": ""
+	},{	"name": "Xi Jinping",
+		"title": "President of the People's Republic of China",
+		"country": "China",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Xi_Jinping_October_2015.jpg", 
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Vladimir Putin",
+		"title": "President of Russia",
+		"country": "Russia",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vladimir_Putin_June_2016.jpg/452px-Vladimir_Putin_June_2016.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Angela Merkel",
+		"title": "Chancellor of Germany",
+		"country": "Germany",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Angela_Merkel_-_Juli_2010_-_3zu4_cropped.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Narendra Modi",
+		"title": "Prime Minister of India",
+		"country": "India",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/9/90/PM_Modi_2015.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Pope Francis",
+		"title": "The Pope",
+		"country": "Vatican City",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Franciscus_in_2015.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "David Cameron",
+		"title": "Prime Minister of the United Kingdom",
+		"country": "United Kingdom",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/2/21/David_Cameron_official.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Francois Hollande",
+		"title": "President of France",
+		"country": "France",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fran%C3%A7ois_Hollande_%28Journ%C3%A9es_de_Nantes_2012%29.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Shinzo Abe",
+		"title": "Prime Minister of Japan",
+		"country": "Japan",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Shinz%C5%8D_Abe_April_2015.jpg/450px-Shinz%C5%8D_Abe_April_2015.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Dilma Rousseff",
+		"title": "President of Brazil",
+		"country": "Brazil",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "King Salman bin Abdulaziz al Saud",
+		"title": "King of Saudi Arabia",
+		"country": "Saudi Arabia",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Prince_Salman_bin_Abd_al-Aziz_Al_Saud_at_the_Pentagon_April_2012.jpg/479px-Prince_Salman_bin_Abd_al-Aziz_Al_Saud_at_the_Pentagon_April_2012.jpg", "office": "", "history": "", "flag": "", "map": ""
+	},{	"name": "Ali Khamenei",
+		"title": "Supreme Leader of Iran",
+		"country": "Iran",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Portrait_of_Ali_Khamenei_2016.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Park Geun-hye",
+		"title": "President of South Korea",
+		"country": "South Korea",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Park_Geun-hye_%288724400493%29_%28cropped%29.jpg/368px-Park_Geun-hye_%288724400493%29_%28cropped%29.jpg"
+	,  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+	},{	"name": "Benjamin Netanyahu",
+		"title": "Prime Minister of Israel",
+		"country": "Israel",
+		"photo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Benjamin_Netanyahu_portrait.jpg",  
+		"office": "", "history": "",  
+		"flag": "", "map": ""
+    }]
