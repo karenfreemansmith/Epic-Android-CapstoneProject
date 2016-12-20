@@ -1,12 +1,15 @@
 package com.karenfreemansmith.flashcards.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.karenfreemansmith.flashcards.Constants;
 import com.karenfreemansmith.flashcards.R;
 import com.karenfreemansmith.flashcards.models.Person;
 import com.squareup.picasso.Picasso;
@@ -22,14 +25,22 @@ public class DetailViewActivity extends AppCompatActivity {
     @Bind(R.id.textViewName) TextView mName;
     @Bind(R.id.textViewTitle) TextView mTitle;
 
+    private SharedPreferences mSharedPreferences;
+
     private String mHistoryWiki;
     private String mOfficeWiki;
+    private String mScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_view);
         ButterKnife.bind(this);
+
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
+        getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
+
 
         Intent intent = getIntent();
 

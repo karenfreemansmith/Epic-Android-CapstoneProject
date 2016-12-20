@@ -32,20 +32,21 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Choice 2"
-                android:id="@+id/buttonC"
-                android:layout_below="@+id/imageViewClue"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="Choice 1"
                 android:id="@+id/buttonA"
                 android:layout_below="@+id/imageViewClue"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choice 3"
+                android:id="@+id/buttonB"
+                android:layout_below="@+id/buttonA"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -57,20 +58,21 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Choice 2"
+                android:id="@+id/buttonC"
+                android:layout_below="@+id/imageViewClue"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:text="Choice 4"
                 android:id="@+id/buttonD"
                 android:layout_alignTop="@+id/buttonB"
                 android:layout_alignLeft="@+id/buttonC"
                 android:layout_alignStart="@+id/buttonC" />
 
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Choice 3"
-                android:id="@+id/buttonB"
-                android:layout_below="@+id/buttonA"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
         </LinearLayout>
     </LinearLayout>
 

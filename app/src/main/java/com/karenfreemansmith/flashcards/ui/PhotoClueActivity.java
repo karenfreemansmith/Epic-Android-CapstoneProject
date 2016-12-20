@@ -1,12 +1,16 @@
 package com.karenfreemansmith.flashcards.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.karenfreemansmith.flashcards.Constants;
 import com.karenfreemansmith.flashcards.R;
 import com.karenfreemansmith.flashcards.models.Person;
 import com.karenfreemansmith.flashcards.models.Question;
@@ -22,7 +26,11 @@ public class PhotoClueActivity extends AppCompatActivity {
     @Bind(R.id.buttonB) Button mB;
     @Bind(R.id.buttonC) Button mC;
     @Bind(R.id.buttonD) Button mD;
+
     private Question mQuestion;
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private String mScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,20 +38,28 @@ public class PhotoClueActivity extends AppCompatActivity {
         setContentView(R.layout.activity_photo_clue);
         ButterKnife.bind(this);
 
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
+        getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
+
         mQuestion = new Question();
         String clueUrl="http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg";
         // set clue = "correct" person...
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson1().getPhoto();
+            Log.d("correct answer: ", mQuestion.getPerson1().getName());
         }
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson2().getPhoto();
+            Log.d("correct answer: ", mQuestion.getPerson1().getName());
         }
         if(mQuestion.getPerson3().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson4().getPhoto();
+            Log.d("correct answer: ", mQuestion.getPerson1().getName());
         }
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson4().getPhoto();
+            Log.d("correct answer: ", mQuestion.getPerson1().getName());
         }
 
         Picasso.with(PhotoClueActivity.this)
@@ -64,6 +80,7 @@ public class PhotoClueActivity extends AppCompatActivity {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+            increaseScore();
         }
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson1().getName());
@@ -79,6 +96,7 @@ public class PhotoClueActivity extends AppCompatActivity {
     public void chooseB() {
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -96,6 +114,7 @@ public class PhotoClueActivity extends AppCompatActivity {
     public void chooseC() {
         if(mQuestion.getPerson3().isCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -113,6 +132,7 @@ public class PhotoClueActivity extends AppCompatActivity {
     public void chooseD() {
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -124,5 +144,12 @@ public class PhotoClueActivity extends AppCompatActivity {
         intent.putExtra("title", mQuestion.getPerson4().getTitle());
         intent.putExtra("country", mQuestion.getPerson4().getCountry());
         startActivity(intent);
+    }
+
+    private void increaseScore() {
+        int score = Integer.parseInt(mScore);
+        score++;
+        String newScore = String.valueOf(score);
+        mEditor.putString(Constants.PREFERENCES_SCORE_KEY, newScore).apply();
     }
 }

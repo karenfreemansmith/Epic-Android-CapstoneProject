@@ -1,12 +1,16 @@
 package com.karenfreemansmith.flashcards.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.karenfreemansmith.flashcards.Constants;
 import com.karenfreemansmith.flashcards.R;
 import com.karenfreemansmith.flashcards.models.Person;
 import com.karenfreemansmith.flashcards.models.Question;
@@ -22,7 +26,11 @@ public class TextClueActivity extends AppCompatActivity {
     @Bind(R.id.imageButtonC) ImageView mC;
     @Bind(R.id.imageButtonD) ImageView mD;
     @Bind(R.id.textViewClue) TextView mClue;
+
     private Question mQuestion;
+    private SharedPreferences mSharedPreferences;
+    private SharedPreferences.Editor mEditor;
+    private String mScore;
 
 
     @Override
@@ -31,20 +39,29 @@ public class TextClueActivity extends AppCompatActivity {
         setContentView(R.layout.activity_text_clue);
         ButterKnife.bind(this);
 
+        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
+        getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
+
+
         mQuestion = new Question();
         String clueText="something bad happened";
 
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             clueText=mQuestion.getPerson1().getName();
+            Log.d("correct answer: ", clueText);
         }
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             clueText=mQuestion.getPerson2().getName();
+            Log.d("correct answer: ", clueText);
         }
         if(mQuestion.getPerson3().isCorrectAnswer()) {
             clueText=mQuestion.getPerson4().getName();
+            Log.d("correct answer: ", clueText);
         }
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             clueText=mQuestion.getPerson4().getName();
+            Log.d("correct answer: ", clueText);
         }
 
 
@@ -76,12 +93,18 @@ public class TextClueActivity extends AppCompatActivity {
 
 
     }
+    private void increaseScore() {
+        int score = Integer.parseInt(mScore);
+        score++;
+        mEditor.putString(Constants.PREFERENCES_SCORE_KEY, String.valueOf(score)).apply();
+    }
 
 
     @OnClick(R.id.imageButtonA)
     public void chooseA() {
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -99,6 +122,7 @@ public class TextClueActivity extends AppCompatActivity {
     public void chooseB() {
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -116,6 +140,7 @@ public class TextClueActivity extends AppCompatActivity {
     public void chooseC() {
         if(mQuestion.getPerson3().isCorrectAnswer()) {
             Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -133,6 +158,7 @@ public class TextClueActivity extends AppCompatActivity {
     public void chooseD() {
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
@@ -145,4 +171,6 @@ public class TextClueActivity extends AppCompatActivity {
         intent.putExtra("country", mQuestion.getPerson4().getCountry());
         startActivity(intent);
     }
+
+
 }
