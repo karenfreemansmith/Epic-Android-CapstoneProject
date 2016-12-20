@@ -1,85 +1,252 @@
 [
-	{	"name": "Barrak Obama",
-		"title": "President of the United States",
-		"country": "United States of America",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Official_portrait_of_Barack_Obama.jpg", 
-		"office": "", "history": "", 
-		"flag": "", "map": ""
-	},{	"name": "Xi Jinping",
-		"title": "President of the People's Republic of China",
-		"country": "China",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Xi_Jinping_October_2015.jpg", 
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Vladimir Putin",
-		"title": "President of Russia",
-		"country": "Russia",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vladimir_Putin_June_2016.jpg/452px-Vladimir_Putin_June_2016.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Angela Merkel",
-		"title": "Chancellor of Germany",
-		"country": "Germany",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Angela_Merkel_-_Juli_2010_-_3zu4_cropped.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Narendra Modi",
-		"title": "Prime Minister of India",
-		"country": "India",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/9/90/PM_Modi_2015.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Pope Francis",
-		"title": "The Pope",
-		"country": "Vatican City",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Franciscus_in_2015.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "David Cameron",
-		"title": "Prime Minister of the United Kingdom",
-		"country": "United Kingdom",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/2/21/David_Cameron_official.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Francois Hollande",
-		"title": "President of France",
-		"country": "France",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fran%C3%A7ois_Hollande_%28Journ%C3%A9es_de_Nantes_2012%29.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Shinzo Abe",
-		"title": "Prime Minister of Japan",
-		"country": "Japan",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Shinz%C5%8D_Abe_April_2015.jpg/450px-Shinz%C5%8D_Abe_April_2015.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Dilma Rousseff",
-		"title": "President of Brazil",
-		"country": "Brazil",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/8/81/Dilma_Rousseff_-_foto_oficial_2011-01-09.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "King Salman bin Abdulaziz al Saud",
-		"title": "King of Saudi Arabia",
-		"country": "Saudi Arabia",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Prince_Salman_bin_Abd_al-Aziz_Al_Saud_at_the_Pentagon_April_2012.jpg/479px-Prince_Salman_bin_Abd_al-Aziz_Al_Saud_at_the_Pentagon_April_2012.jpg", "office": "", "history": "", "flag": "", "map": ""
-	},{	"name": "Ali Khamenei",
-		"title": "Supreme Leader of Iran",
-		"country": "Iran",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Portrait_of_Ali_Khamenei_2016.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Park Geun-hye",
-		"title": "President of South Korea",
-		"country": "South Korea",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Park_Geun-hye_%288724400493%29_%28cropped%29.jpg/368px-Park_Geun-hye_%288724400493%29_%28cropped%29.jpg"
-	,  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-	},{	"name": "Benjamin Netanyahu",
-		"title": "Prime Minister of Israel",
-		"country": "Israel",
-		"photo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Benjamin_Netanyahu_portrait.jpg",  
-		"office": "", "history": "",  
-		"flag": "", "map": ""
-    }]
+  {
+    "name": "Barrak Obama",
+    "title": "President",
+    "country": "the United States of America",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Official_portrait_of_Barack_Obama.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_the_United_States",
+    "history": "https://en.wikipedia.org/wiki/Barack_Obama",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png"
+  },
+  {
+    "name": "Xi Jinping",
+    "title": "President",
+    "country": "the People's Republic of China",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Xi_Jinping_October_2015.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_the_People%27s_Republic_of_China",
+    "history": "https://en.wikipedia.org/wiki/Xi_Jinping",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/125px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/People%27s_Republic_of_China_%28orthographic_projection%29.svg/220px-People%27s_Republic_of_China_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Xi Jinping",
+    "title": "General Secretary of the Communist Party",
+    "country": "the People's Republic of China",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Xi_Jinping_October_2015.jpg",
+    "office": "https://en.wikipedia.org/wiki/General_Secretary_of_the_Communist_Party_of_China",
+    "history": "https://en.wikipedia.org/wiki/Xi_Jinping",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/125px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/People%27s_Republic_of_China_%28orthographic_projection%29.svg/220px-People%27s_Republic_of_China_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Li Keqiang",
+    "title": "Premier of the State Council",
+    "country": "the People's Republic of China",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Li_Keqiang_%28cropped%29.jpg/220px-Li_Keqiang_%28cropped%29.jpg",
+    "office": "https://en.wikipedia.org/wiki/Premier_of_the_People%27s_Republic_of_China",
+    "history": "https://en.wikipedia.org/wiki/Li_Keqiang",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Flag_of_the_People%27s_Republic_of_China.svg/125px-Flag_of_the_People%27s_Republic_of_China.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/People%27s_Republic_of_China_%28orthographic_projection%29.svg/220px-People%27s_Republic_of_China_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Vladimir Putin",
+    "title": "President",
+    "country": "Russia",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Vladimir_Putin_June_2016.jpg/452px-Vladimir_Putin_June_2016.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_Russia",
+    "history": "https://en.wikipedia.org/wiki/Vladimir_Putin",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/125px-Flag_of_Russia.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Russian_Federation_%28orthographic_projection%29_-_Crimea_disputed.svg/220px-Russian_Federation_%28orthographic_projection%29_-_Crimea_disputed.svg.png"
+  },
+  {
+    "name": "Dmitry Medvedev",
+    "title": "Prime Minister",
+    "country": "Russia",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Dmitry_Medvedev%2C_September_2016.jpeg/220px-Dmitry_Medvedev%2C_September_2016.jpeg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_Russia",
+    "history": "https://en.wikipedia.org/wiki/Dmitry_Medvedev",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/125px-Flag_of_Russia.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Russian_Federation_%28orthographic_projection%29_-_Crimea_disputed.svg/220px-Russian_Federation_%28orthographic_projection%29_-_Crimea_disputed.svg.png"
+  },
+  {
+    "name": "Angela Merkel",
+    "title": "Chancellor",
+    "country": "Germany",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/2/21/Angela_Merkel_-_Juli_2010_-_3zu4_cropped.jpg",
+    "office": "https://en.wikipedia.org/wiki/Chancellor_of_Germany_(1949%E2%80%93)",
+    "history": "https://en.wikipedia.org/wiki/Angela_Merkel",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_Germany.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/EU-Germany.svg/250px-EU-Germany.svg.png"
+  },
+  {
+    "name": "Joachim Gauck",
+    "title": "President",
+    "country": "Germany",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/2012-06-05_Bundespraesident_Joachim_Gauck_Berlin.jpg/220px-2012-06-05_Bundespraesident_Joachim_Gauck_Berlin.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_Germany",
+    "history": "https://en.wikipedia.org/wiki/Joachim_Gauck",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_Germany.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/EU-Germany.svg/250px-EU-Germany.svg.png"
+  },
+  {
+    "name": "Narendra Modi",
+    "title": "Prime Minister",
+    "country": "India",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/9/90/PM_Modi_2015.jpg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
+    "history": "https://en.wikipedia.org/wiki/Narendra_Modi",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/125px-Flag_of_India.svg.png",
+    "map": "https://en.wikipedia.org/wiki/File:India_(orthographic_projection).svg"
+  },
+  {
+    "name": "Pranab Mukherjee",
+    "title": "President",
+    "country": "India",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Secretary_Tim_Geithner_and_Finance_Minister_Pranab_Mukherjee_2010_crop.jpg/220px-Secretary_Tim_Geithner_and_Finance_Minister_Pranab_Mukherjee_2010_crop.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_India",
+    "history": "https://en.wikipedia.org/wiki/Pranab_Mukherjee",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/125px-Flag_of_India.svg.png",
+    "map": "https://en.wikipedia.org/wiki/File:India_(orthographic_projection).svg"
+  },
+  {
+    "name": "Pope Francis",
+    "title": "Sovereign",
+    "country": "Vatican City",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Franciscus_in_2015.jpg",
+    "office": "https://en.wikipedia.org/wiki/List_of_sovereigns_of_Vatican_City_State",
+    "history": "https://en.wikipedia.org/wiki/Pope_Francis",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Flag_of_the_Vatican_City.svg/125px-Flag_of_the_Vatican_City.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Location_of_the_Vatican_City_in_Europe.svg/250px-Location_of_the_Vatican_City_in_Europe.svg.png"
+  },
+  {
+    "name": "Theresa May",
+    "title": "Prime Minister",
+    "country": "The United Kingdom",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Theresa_May_UK_Home_Office_%28cropped%29.jpg/220px-Theresa_May_UK_Home_Office_%28cropped%29.jpg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom",
+    "history": "https://en.wikipedia.org/wiki/Theresa_May",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/EU-United_Kingdom.svg/250px-EU-United_Kingdom.svg.png"
+  },
+  {
+    "name": "Elizabeth II",
+    "title": "Queen",
+    "country": "The United Kingdom",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Queen_Elizabeth_II_March_2015.jpg/220px-Queen_Elizabeth_II_March_2015.jpg",
+    "office": "https://en.wikipedia.org/wiki/Monarchy_of_the_United_Kingdom",
+    "history": "https://en.wikipedia.org/wiki/Elizabeth_II",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/EU-United_Kingdom.svg/250px-EU-United_Kingdom.svg.png"
+  },
+  {
+    "name": "Francois Hollande",
+    "title": "President",
+    "country": "France",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/0/07/Fran%C3%A7ois_Hollande_%28Journ%C3%A9es_de_Nantes_2012%29.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_France",
+    "history": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Hollande",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_France.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU-France.svg/250px-EU-France.svg.png"
+  },
+  {
+    "name": "Bernard Cazeneuve",
+    "title": "Prime Minister",
+    "country": "France",
+    "photo": "https://en.wikipedia.org/wiki/File:Ministru_prezidents_Valdis_Dombrovskis_tiekas_ar_Francijas_Eiropas_lietu_ministru_Bern%C4%81ru_Kazen%C4%93vu_(Bernard_Cazeneuve)_(7985359635)_(cropped).jpg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_France",
+    "history": "https://en.wikipedia.org/wiki/Bernard_Cazeneuve",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_France.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/EU-France.svg/250px-EU-France.svg.png"
+  },
+  {
+    "name": "Shinzo Abe",
+    "title": "Prime Minister",
+    "country": "Japan",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Shinz%C5%8D_Abe_April_2015.jpg/450px-Shinz%C5%8D_Abe_April_2015.jpg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_Japan",
+    "history": "https://en.wikipedia.org/wiki/Shinz%C5%8D_Abe",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/125px-Flag_of_Japan.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Japan_%28orthographic_projection%29.svg/220px-Japan_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Akihito",
+    "title": "Emperor",
+    "country": "Japan",
+    "photo": "https://en.wikipedia.org/wiki/File:Emperor_Akihito_cropped_2_Barack_Obama_Emperor_Akihito_and_Empress_Michiko_20140424_1.jpg",
+    "office": "https://en.wikipedia.org/wiki/Emperor_of_Japan",
+    "history": "https://en.wikipedia.org/wiki/Akihito",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Flag_of_Japan.svg/125px-Flag_of_Japan.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Japan_%28orthographic_projection%29.svg/220px-Japan_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Michel Temer",
+    "title": "President",
+    "country": "Brazil",
+    "photo": "https://en.wikipedia.org/wiki/File:Michel_Temer_planalto_3_(cropped).jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_Brazil",
+    "history": "https://en.wikipedia.org/wiki/Michel_Temer",
+    "flag": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/125px-Flag_of_Brazil.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Brazil_%28orthographic_projection%29.svg/250px-Brazil_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Salman bin Abdulaziz al Saud",
+    "title": "King",
+    "country": "Saudi Arabia",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Prince_Salman_bin_Abd_al-Aziz_Al_Saud_at_the_Pentagon_April_2012.jpg/479px-Prince_Salman_bin_Abd_al-Aziz_Al_Saud_at_the_Pentagon_April_2012.jpg",
+    "office": "https://en.wikipedia.org/wiki/King_of_Saudi_Arabia",
+    "history": "https://en.wikipedia.org/wiki/Salman_of_Saudi_Arabia",
+    "flag": "https://en.wikipedia.org/wiki/File:Flag_of_Saudi_Arabia.svg",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Saudi_Arabia_%28orthographic_projection%29.svg/250px-Saudi_Arabia_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Hassan Rouhani",
+    "title": "President",
+    "country": "Iran",
+    "photo": "https://en.wikipedia.org/wiki/File:Hassan_Rouhani.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_Iran",
+    "history": "https://en.wikipedia.org/wiki/Hassan_Rouhani",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/125px-Flag_of_Iran.svg.png",
+    "map": "https://en.wikipedia.org/wiki/File:Iran_(orthographic_projection).svg"
+  },
+  {
+    "name": "Ali Khamenei",
+    "title": "Supreme Leader",
+    "country": "Iran",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Portrait_of_Ali_Khamenei_2016.jpg",
+    "office": "https://en.wikipedia.org/wiki/Supreme_Leader_of_Iran",
+    "history": "https://en.wikipedia.org/wiki/Ali_Khamenei",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flag_of_Iran.svg/125px-Flag_of_Iran.svg.png",
+    "map": "https://en.wikipedia.org/wiki/File:Iran_(orthographic_projection).svg"
+  },
+  {
+    "name": "Park Geun-hye",
+    "title": "President",
+    "country": "South Korea",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Park_Geun-hye_%288724400493%29_%28cropped%29.jpg/368px-Park_Geun-hye_%288724400493%29_%28cropped%29.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_South_Korea",
+    "history": "https://en.wikipedia.org/wiki/Park_Geun-hye",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/125px-Flag_of_South_Korea.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/South_Korea_%28orthographic_projection%29.svg/220px-South_Korea_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Hwang Kyo-ahn",
+    "title": "Prime Minister",
+    "country": "South Korea",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Hwang_Kyo-ahn_December_2016.jpg/220px-Hwang_Kyo-ahn_December_2016.jpg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_South_Korea",
+    "history": "https://en.wikipedia.org/wiki/Hwang_Kyo-ahn",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_South_Korea.svg/125px-Flag_of_South_Korea.svg.png",
+    "map": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/South_Korea_%28orthographic_projection%29.svg/220px-South_Korea_%28orthographic_projection%29.svg.png"
+  },
+  {
+    "name": "Benjamin Netanyahu",
+    "title": "Prime Minister",
+    "country": "Israel",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Benjamin_Netanyahu_portrait.jpg",
+    "office": "https://en.wikipedia.org/wiki/Prime_Minister_of_Israel",
+    "history": "https://en.wikipedia.org/wiki/Benjamin_Netanyahu",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/125px-Flag_of_Israel.svg.png",
+    "map": "https://en.wikipedia.org/wiki/File:ISR_orthographic.svg"
+  },
+  {
+    "name": "Reuven Rivlin",
+    "title": "President",
+    "country": "Israel",
+    "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Reuven_Rivlin_as_the_president_of_Israel.jpg/220px-Reuven_Rivlin_as_the_president_of_Israel.jpg",
+    "office": "https://en.wikipedia.org/wiki/President_of_Israel",
+    "history": "https://en.wikipedia.org/wiki/Reuven_Rivlin",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/125px-Flag_of_Israel.svg.png",
+    "map": "https://en.wikipedia.org/wiki/File:ISR_orthographic.svg"
+  }
+]
