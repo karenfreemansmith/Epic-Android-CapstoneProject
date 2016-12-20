@@ -57,4 +57,13 @@
         android:layout_below="@+id/editTextConfirm"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="115dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Already have an account? Log in here!"
+        android:id="@+id/textViewLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -15,7 +15,8 @@
         android:text="Play Again"
         android:id="@+id/buttonPlayAgain"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/listView"
+        android:layout_alignEnd="@+id/listView" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,4 +34,13 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView"
         android:layout_above="@+id/buttonPlayAgain" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/buttonLogout"
+        android:layout_below="@+id/listView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
