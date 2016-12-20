@@ -5,9 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.karenfreemansmith.flashcards.R;
 import com.karenfreemansmith.flashcards.models.Person;
+import com.karenfreemansmith.flashcards.models.Question;
 import com.squareup.picasso.Picasso;
 
 import butterknife.Bind;
@@ -20,6 +22,7 @@ public class TextClueActivity extends AppCompatActivity {
     @Bind(R.id.imageButtonC) ImageView mC;
     @Bind(R.id.imageButtonD) ImageView mD;
     @Bind(R.id.textViewClue) TextView mClue;
+    private Question mQuestion;
 
 
     @Override
@@ -28,28 +31,45 @@ public class TextClueActivity extends AppCompatActivity {
         setContentView(R.layout.activity_text_clue);
         ButterKnife.bind(this);
 
-        mClue.setText(Person.getRandomPerson().getCountry());
+        mQuestion = new Question();
+        String clueText="something bad happened";
+
+        if(mQuestion.getPerson1().isCorrectAnswer()) {
+            clueText=mQuestion.getPerson1().getName();
+        }
+        if(mQuestion.getPerson2().isCorrectAnswer()) {
+            clueText=mQuestion.getPerson2().getName();
+        }
+        if(mQuestion.getPerson3().isCorrectAnswer()) {
+            clueText=mQuestion.getPerson4().getName();
+        }
+        if(mQuestion.getPerson4().isCorrectAnswer()) {
+            clueText=mQuestion.getPerson4().getName();
+        }
+
+
+        mClue.setText(clueText);
 
         Picasso.with(TextClueActivity.this)
-                .load(Person.getRandomPerson().getPhoto())
+                .load(mQuestion.getPerson1().getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mA);
 
         Picasso.with(TextClueActivity.this)
-                .load(Person.getRandomPerson().getPhoto())
+                .load(mQuestion.getPerson2().getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mB);
 
         Picasso.with(TextClueActivity.this)
-                .load(Person.getRandomPerson().getPhoto())
+                .load(mQuestion.getPerson3().getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mC);
 
         Picasso.with(TextClueActivity.this)
-                .load(Person.getRandomPerson().getPhoto())
+                .load(mQuestion.getPerson4().getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mD);
@@ -57,27 +77,72 @@ public class TextClueActivity extends AppCompatActivity {
 
     }
 
+
     @OnClick(R.id.imageButtonA)
     public void chooseA() {
+        if(mQuestion.getPerson1().isCorrectAnswer()) {
+            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+        }
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
+        intent.putExtra("name", mQuestion.getPerson1().getName());
+        intent.putExtra("photo", mQuestion.getPerson1().getPhoto());
+        intent.putExtra("history", mQuestion.getPerson1().getHistory());
+        intent.putExtra("office", mQuestion.getPerson1().getOffice());
+        intent.putExtra("title", mQuestion.getPerson1().getTitle());
+        intent.putExtra("country", mQuestion.getPerson1().getCountry());
         startActivity(intent);
     }
 
     @OnClick(R.id.imageButtonB)
     public void chooseB() {
+        if(mQuestion.getPerson2().isCorrectAnswer()) {
+            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+        }
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
+        intent.putExtra("name", mQuestion.getPerson2().getName());
+        intent.putExtra("photo", mQuestion.getPerson2().getPhoto());
+        intent.putExtra("history", mQuestion.getPerson2().getHistory());
+        intent.putExtra("office", mQuestion.getPerson2().getOffice());
+        intent.putExtra("title", mQuestion.getPerson2().getTitle());
+        intent.putExtra("country", mQuestion.getPerson2().getCountry());
         startActivity(intent);
     }
 
     @OnClick(R.id.imageButtonC)
     public void chooseC() {
+        if(mQuestion.getPerson3().isCorrectAnswer()) {
+            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+        }
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
+        intent.putExtra("name", mQuestion.getPerson3().getName());
+        intent.putExtra("photo", mQuestion.getPerson3().getPhoto());
+        intent.putExtra("history", mQuestion.getPerson3().getHistory());
+        intent.putExtra("office", mQuestion.getPerson3().getOffice());
+        intent.putExtra("title", mQuestion.getPerson3().getTitle());
+        intent.putExtra("country", mQuestion.getPerson3().getCountry());
         startActivity(intent);
     }
 
     @OnClick(R.id.imageButtonD)
     public void chooseD() {
+        if(mQuestion.getPerson4().isCorrectAnswer()) {
+            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+        }
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
+        intent.putExtra("name", mQuestion.getPerson4().getName());
+        intent.putExtra("photo", mQuestion.getPerson4().getPhoto());
+        intent.putExtra("history", mQuestion.getPerson4().getHistory());
+        intent.putExtra("office", mQuestion.getPerson4().getOffice());
+        intent.putExtra("title", mQuestion.getPerson4().getTitle());
+        intent.putExtra("country", mQuestion.getPerson4().getCountry());
         startActivity(intent);
     }
 }
