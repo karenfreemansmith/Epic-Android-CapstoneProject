@@ -40,6 +40,7 @@ public class TextClueActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mEditor = mSharedPreferences.edit();
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
 

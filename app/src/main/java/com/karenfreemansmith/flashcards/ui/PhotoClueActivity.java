@@ -39,6 +39,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        mEditor = mSharedPreferences.edit();
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
 
@@ -78,9 +79,9 @@ public class PhotoClueActivity extends AppCompatActivity {
     public void chooseA() {
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            increaseScore();
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
-            increaseScore();
         }
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson1().getName());
