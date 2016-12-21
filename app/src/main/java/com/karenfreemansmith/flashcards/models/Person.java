@@ -727,9 +727,9 @@ case 59 :
 randomPerson = new Person("Jeh Johnson",
       "Secretary of Homeland Security",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jeh_Johnson_official_DHS_portrait.jpg/220px-Jeh_Johnson_official_DHS_portrait.jpg",
+      "https://en.wikipedia.org/wiki/United_States_Secretary_of_Homeland_Security",
+      "https://en.wikipedia.org/wiki/Jeh_Johnson",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -738,9 +738,9 @@ case 60 :
 randomPerson = new Person("Denis McDonough",
       "White House Chief of Staff",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Denis_McDonough_2011.jpg/220px-Denis_McDonough_2011.jpg",
+      "https://en.wikipedia.org/wiki/White_House_Chief_of_Staff",
+      "https://en.wikipedia.org/wiki/Denis_McDonough",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -749,9 +749,9 @@ case 61 :
 randomPerson = new Person("Shaun Donovan",
       "Director of the Office of Management and Budget",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/DonovanShaunLS.jpg/220px-DonovanShaunLS.jpg",
+      "https://en.wikipedia.org/wiki/Office_of_Management_and_Budget",
+      "https://en.wikipedia.org/wiki/Shaun_Donovan",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -760,9 +760,9 @@ case 62 :
 randomPerson = new Person("Michael Botticelli",
       "Director of National Drug Control Policy",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Michael_Botticelli.jpg/220px-Michael_Botticelli.jpg",
+      "https://en.wikipedia.org/wiki/Office_of_National_Drug_Control_Policy",
+      "https://en.wikipedia.org/wiki/Michael_Botticelli_(civil_servant)",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -771,9 +771,9 @@ case 63 :
 randomPerson = new Person("Michael Froman",
       "Trade Representative",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Michael_Froman_official_portrait.jpg/220px-Michael_Froman_official_portrait.jpg",
+      "https://en.wikipedia.org/wiki/Office_of_the_United_States_Trade_Representative",
+      "https://en.wikipedia.org/wiki/Michael_Froman",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -782,9 +782,9 @@ case 64 :
 randomPerson = new Person("Jim Clapper",
       "Director of National Intelligence",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/James_R._Clapper_official_portrait.jpg/220px-James_R._Clapper_official_portrait.jpg",
+      "https://en.wikipedia.org/wiki/Director_of_National_Intelligence",
+      "https://en.wikipedia.org/wiki/James_R._Clapper",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -793,9 +793,9 @@ case 65 :
 randomPerson = new Person("Samantha Power",
       "Ambassador to the United Nations",
       "the United States of America",
-      ".jpg",
-      "officeurl",
-      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Samantha_Power.jpg/220px-Samantha_Power.jpg",
+      "https://en.wikipedia.org/wiki/United_States_Ambassador_to_the_United_Nations",
+      "https://en.wikipedia.org/wiki/Samantha_Power",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
@@ -804,7 +804,7 @@ case 66 :
 randomPerson = new Person("Orrin Hatch",
       "President pro tempore of the Senate",
       "the United States of America",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Orrin_Hatch%2C_Official_Photograph.jpg/220px-Orrin_Hatch%2C_Official_Photograph.jpg",
       "https://en.wikipedia.org/wiki/President_pro_tempore_of_the_United_States_Senate",
       "https://en.wikipedia.org/wiki/Orrin_Hatch",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -815,7 +815,7 @@ case 67 :
 randomPerson = new Person("Patrick Leahy",
       "President pro tempore emeritus of the Senate",
       "the United States of America",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Leahy2009.jpg/220px-Leahy2009.jpg",
       "https://en.wikipedia.org/wiki/President_pro_tempore_of_the_United_States_Senate#President_pro_tempore_emeritus",
       "https://en.wikipedia.org/wiki/Patrick_Leahy",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -826,7 +826,7 @@ case 68 :
 randomPerson = new Person("Thad Cochran",
       "Senator",
       "Mississippi",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CochranThad%28R-MS%29.jpg/220px-CochranThad%28R-MS%29.jpg",
       "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Mississippi",
       "https://en.wikipedia.org/wiki/Thad_Cochran",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -837,7 +837,7 @@ case 69 :
 randomPerson = new Person("Chuck Grassley",
       "Senator",
       "Iowa",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Sen_Chuck_Grassley_official.jpg/220px-Sen_Chuck_Grassley_official.jpg",
       "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Iowa",
       "https://en.wikipedia.org/wiki/Chuck_Grassley",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -848,7 +848,7 @@ case 70 :
 randomPerson = new Person("Mitch McConnell",
       "Senator",
       "Kentucky",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Sen_Mitch_McConnell_official.jpg/473px-Sen_Mitch_McConnell_official.jpg",
       "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Kentucky",
       "https://en.wikipedia.org/wiki/Mitch_McConnell",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -859,7 +859,7 @@ case 71 :
 randomPerson = new Person("Barbara Mikulski",
       "Senator",
       "Maryland",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Barbara_Mikulski_official_portrait_c._2011.jpg/220px-Barbara_Mikulski_official_portrait_c._2011.jpg",
       "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Maryland",
       "https://en.wikipedia.org/wiki/Barbara_Mikulski",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -870,7 +870,7 @@ case 72 :
 randomPerson = new Person("Richard Shelby",
       "Senator",
       "Alabama",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Richard_Shelby%2C_official_portrait%2C_112th_Congress.jpg/220px-Richard_Shelby%2C_official_portrait%2C_112th_Congress.jpg",
       "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Alabama",
       "https://en.wikipedia.org/wiki/Richard_Shelby",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
@@ -881,9 +881,31 @@ case 73 :
 randomPerson = new Person("John McCain",
       "Senator",
       "Arizona",
-      ".jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/John_McCain_official_portrait_2009.jpg",
       "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Arizona",
       "https://en.wikipedia.org/wiki/John_McCain",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 74 :
+randomPerson = new Person("Harry Reid",
+      "Senator",
+      "Nevada",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Harry_Reid_official_portrait_2009.jpg/220px-Harry_Reid_official_portrait_2009.jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Nevada",
+      "https://en.wikipedia.org/wiki/Harry_Reid",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 75 :
+randomPerson = new Person("Dianne Feinstein",
+      "Senator",
+      "California",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dianne_Feinstein%2C_official_Senate_photo_2.jpg/220px-Dianne_Feinstein%2C_official_Senate_photo_2.jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_California",
+      "https://en.wikipedia.org/wiki/Dianne_Feinstein",
       "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
 break;
