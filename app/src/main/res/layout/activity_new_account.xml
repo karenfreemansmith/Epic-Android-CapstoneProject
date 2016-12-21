@@ -7,50 +7,73 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.NewAccountActivity">
+    tools:context=".ui.NewAccountActivity"
+    android:background="@drawable/flags">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/editTextName"
+        android:hint="name"
+        android:background="@color/colorTextIcons"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryLight"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:hint="name" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="193dp" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
         android:ems="10"
         android:id="@+id/editTextEmail"
         android:layout_below="@+id/editTextName"
         android:layout_centerHorizontal="true"
-        android:hint="email" />
+        android:hint="email"
+        android:background="@color/colorTextIcons"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryLight" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editTextPassword"
         android:layout_below="@+id/editTextEmail"
         android:layout_centerHorizontal="true"
-        android:hint="password" />
+        android:hint="password"
+        android:background="@color/colorTextIcons"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryLight" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editTextConfirm"
         android:layout_below="@+id/editTextPassword"
         android:layout_centerHorizontal="true"
-        android:hint="confirm password" />
+        android:hint="confirm password"
+        android:background="@color/colorTextIcons"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimaryLight" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register"
         android:id="@+id/buttonRegister"

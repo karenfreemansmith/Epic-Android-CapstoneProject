@@ -50,19 +50,19 @@ public class TextClueActivity extends AppCompatActivity {
 
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             clueText=mQuestion.getPerson1().getName();
-            Log.d("correct answer: ", clueText);
+            Log.d("1: ", clueText);
         }
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             clueText=mQuestion.getPerson2().getName();
-            Log.d("correct answer: ", clueText);
+            Log.d("2: ", clueText);
         }
         if(mQuestion.getPerson3().isCorrectAnswer()) {
-            clueText=mQuestion.getPerson4().getName();
-            Log.d("correct answer: ", clueText);
+            clueText=mQuestion.getPerson3().getName();
+            Log.d("3: ", clueText);
         }
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             clueText=mQuestion.getPerson4().getName();
-            Log.d("correct answer: ", clueText);
+            Log.d("4: ", clueText);
         }
 
 

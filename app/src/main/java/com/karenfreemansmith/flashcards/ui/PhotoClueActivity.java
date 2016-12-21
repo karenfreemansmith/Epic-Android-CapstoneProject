@@ -48,19 +48,19 @@ public class PhotoClueActivity extends AppCompatActivity {
         // set clue = "correct" person...
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson1().getPhoto();
-            Log.d("correct answer: ", mQuestion.getPerson1().getName());
+            Log.d("1: ", mQuestion.getPerson1().getName());
         }
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson2().getPhoto();
-            Log.d("correct answer: ", mQuestion.getPerson1().getName());
+            Log.d("2: ", mQuestion.getPerson2().getName());
         }
         if(mQuestion.getPerson3().isCorrectAnswer()) {
-            clueUrl=mQuestion.getPerson4().getPhoto();
-            Log.d("correct answer: ", mQuestion.getPerson1().getName());
+            clueUrl=mQuestion.getPerson3().getPhoto();
+            Log.d("3: ", mQuestion.getPerson3().getName());
         }
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson4().getPhoto();
-            Log.d("correct answer: ", mQuestion.getPerson1().getName());
+            Log.d("4: ", mQuestion.getPerson4().getName());
         }
 
         Picasso.with(PhotoClueActivity.this)

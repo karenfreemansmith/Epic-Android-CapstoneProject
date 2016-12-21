@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.MainActivity">
+    tools:context=".ui.MainActivity"
+    android:background="@drawable/flags">
 
     <TextView
         android:layout_width="wrap_content"
@@ -15,17 +16,21 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="How well do you know your world leaders? Try this quiz to find out."
         android:id="@+id/textView2"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:background="#99ffffff"
+        android:padding="12dp"
+        android:textAlignment="center" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Play"
         android:id="@+id/buttonPlay"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="81dp" />
+        android:layout_above="@+id/buttonHighScores"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"

@@ -7,34 +7,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.LoginActivity">
+    tools:context=".ui.LoginActivity"
+    android:background="@drawable/flags">
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextEmail"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="113dp"
-        android:hint="email" />
+        android:hint="email"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorTextIcons"
+        android:padding="12dp"
+        android:textColorHint="@color/colorPrimaryLight"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <EditText
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editTextPassword"
-        android:layout_below="@+id/editTextEmail"
-        android:layout_centerHorizontal="true"
         android:hint="password"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorTextIcons"
+        android:padding="12dp"
+        android:textColorHint="@color/colorPrimaryLight"
+        android:layout_above="@+id/buttonLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
         android:id="@+id/buttonLogin"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="98dp" />
+        android:layout_above="@+id/textViewRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="58dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,7 +56,9 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="sign up as new player"
         android:id="@+id/textViewRegister"
+        android:textColor="@color/colorTextIcons"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryLight"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="48dp" />
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
