@@ -31,6 +31,7 @@ public class TextClueActivity extends AppCompatActivity {
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
     private String mScore;
+    private String mTotal;
 
 
     @Override
@@ -42,7 +43,8 @@ public class TextClueActivity extends AppCompatActivity {
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mSharedPreferences.edit();
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
-        getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
+        mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
+        getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
 
         mQuestion = new Question();
@@ -100,6 +102,13 @@ public class TextClueActivity extends AppCompatActivity {
         mEditor.putString(Constants.PREFERENCES_SCORE_KEY, String.valueOf(score)).apply();
     }
 
+    private void increaseTotal() {
+        int total = Integer.parseInt(mTotal);
+        total++;
+        String newTotal = String.valueOf(total);
+        mEditor.putString(Constants.PREFERENCES_TOTAL_KEY, newTotal).apply();
+    }
+
 
     @OnClick(R.id.imageButtonA)
     public void chooseA() {
@@ -109,6 +118,7 @@ public class TextClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson1().getName());
         intent.putExtra("photo", mQuestion.getPerson1().getPhoto());
@@ -127,6 +137,7 @@ public class TextClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson2().getName());
         intent.putExtra("photo", mQuestion.getPerson2().getPhoto());
@@ -145,6 +156,7 @@ public class TextClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson3().getName());
         intent.putExtra("photo", mQuestion.getPerson3().getPhoto());
@@ -163,6 +175,7 @@ public class TextClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson4().getName());
         intent.putExtra("photo", mQuestion.getPerson4().getPhoto());

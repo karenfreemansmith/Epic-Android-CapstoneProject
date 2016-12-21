@@ -17,41 +17,73 @@
         android:id="@+id/textViewClue"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="40dp"
-        android:layout_marginTop="30dp" />
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp" />
 
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:id="@+id/imageButtonA"
-        android:layout_below="@+id/textViewClue"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:padding="5dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/textViewClue">
 
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:id="@+id/imageButtonB"
-        android:layout_marginTop="31dp"
-        android:layout_below="@+id/imageButtonA"
-        android:layout_alignLeft="@+id/imageButtonA"
-        android:padding="5dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:layout_weight="50">
 
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:id="@+id/imageButtonD"
-        android:layout_alignTop="@+id/imageButtonB"
-        android:layout_alignLeft="@+id/imageButtonC"
-        android:padding="5dp" />
+            <ImageView
+                android:id="@+id/imageButtonC"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignTop="@+id/imageButtonA"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="50"/>
 
-    <ImageView
-        android:layout_width="180dp"
-        android:layout_height="180dp"
-        android:id="@+id/imageButtonC"
-        android:layout_above="@+id/imageButtonB"
-        android:layout_toRightOf="@+id/imageButtonA"
-        android:layout_toEndOf="@+id/imageButtonA"
-        android:padding="5dp" />
+            <ImageView
+                android:id="@+id/imageButtonA"
+                android:layout_below="@+id/textViewClue"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="50"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:layout_weight="50">
+
+            <ImageView
+                android:id="@+id/imageButtonD"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignTop="@+id/imageButtonB"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:layout_marginRight="11dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginTop="22dp"
+                android:layout_weight="50"/>
+
+            <ImageView
+                android:id="@+id/imageButtonB"
+                android:layout_marginTop="31dp"
+                android:layout_below="@+id/imageButtonA"
+                android:layout_alignLeft="@+id/imageButtonA"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="50"
+                android:requiresFadingEdge="horizontal|vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+
 </RelativeLayout>

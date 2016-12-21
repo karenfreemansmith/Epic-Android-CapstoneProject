@@ -108,7 +108,7 @@ public class Person {
 
         Person randomPerson = new Person("Not Found", "Minister","Something is Wrong", "http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg", "", "", "","");
         Random randomGenerator = new Random();
-        int rand = randomGenerator.nextInt(25)+1;
+        int rand = randomGenerator.nextInt(75)+1;
         switch(rand) {
             case 1 :
                 randomPerson = new Person("Barrak Obama",

@@ -45,14 +45,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void addToSharedPreferences(String score) {
+    private void addToSharedPreferences(String score, String total) {
         mEditor.putString(Constants.PREFERENCES_SCORE_KEY, score).apply();
+        mEditor.putString(Constants.PREFERENCES_TOTAL_KEY, total).apply();
     }
 
     @OnClick(R.id.buttonPlay)
     public void startEasy() {
         String score = "0";
-        addToSharedPreferences(score);
+        String total = "0";
+        addToSharedPreferences(score, total);
         Intent intent = new Intent(MainActivity.this, TextClueActivity.class);
         startActivity(intent);
     }

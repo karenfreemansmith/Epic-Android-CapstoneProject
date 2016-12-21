@@ -30,6 +30,7 @@ public class DetailViewActivity extends AppCompatActivity {
     private String mHistoryWiki;
     private String mOfficeWiki;
     private String mScore;
+    private String mTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +40,8 @@ public class DetailViewActivity extends AppCompatActivity {
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
-        getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
+        mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
+        getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
 
         Intent intent = getIntent();

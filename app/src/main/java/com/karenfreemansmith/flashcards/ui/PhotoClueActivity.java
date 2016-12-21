@@ -31,6 +31,7 @@ public class PhotoClueActivity extends AppCompatActivity {
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
     private String mScore;
+    private String mTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,26 +42,23 @@ public class PhotoClueActivity extends AppCompatActivity {
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mSharedPreferences.edit();
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
-        getSupportActionBar().setTitle("News Worthy - Score: " + mScore);
+        mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
+        getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
         mQuestion = new Question();
         String clueUrl="http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg";
         // set clue = "correct" person...
         if(mQuestion.getPerson1().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson1().getPhoto();
-            Log.d("1: ", mQuestion.getPerson1().getName());
         }
         if(mQuestion.getPerson2().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson2().getPhoto();
-            Log.d("2: ", mQuestion.getPerson2().getName());
         }
         if(mQuestion.getPerson3().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson3().getPhoto();
-            Log.d("3: ", mQuestion.getPerson3().getName());
         }
         if(mQuestion.getPerson4().isCorrectAnswer()) {
             clueUrl=mQuestion.getPerson4().getPhoto();
-            Log.d("4: ", mQuestion.getPerson4().getName());
         }
 
         Picasso.with(PhotoClueActivity.this)
@@ -83,6 +81,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson1().getName());
         intent.putExtra("photo", mQuestion.getPerson1().getPhoto());
@@ -101,6 +100,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson2().getName());
         intent.putExtra("photo", mQuestion.getPerson2().getPhoto());
@@ -119,6 +119,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson3().getName());
         intent.putExtra("photo", mQuestion.getPerson3().getPhoto());
@@ -137,6 +138,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         } else {
             Toast.makeText(PhotoClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
         }
+        increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
         intent.putExtra("name", mQuestion.getPerson4().getName());
         intent.putExtra("photo", mQuestion.getPerson4().getPhoto());
@@ -152,5 +154,12 @@ public class PhotoClueActivity extends AppCompatActivity {
         score++;
         String newScore = String.valueOf(score);
         mEditor.putString(Constants.PREFERENCES_SCORE_KEY, newScore).apply();
+    }
+
+    private void increaseTotal() {
+        int total = Integer.parseInt(mTotal);
+        total++;
+        String newTotal = String.valueOf(total);
+        mEditor.putString(Constants.PREFERENCES_TOTAL_KEY, newTotal).apply();
     }
 }
