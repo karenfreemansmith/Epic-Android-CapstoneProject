@@ -17,8 +17,8 @@
         android:id="@+id/textViewClue"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="30dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="30dp" />
 
     <ImageView
         android:layout_width="180dp"

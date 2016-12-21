@@ -1,19 +1,29 @@
-# Epic-Android-Capstone-Flashcards
-Capstone Project for Epicodus Android
+# NewsWorthy
+Version 0.0.1: September 30, 2016
+by [Karen Freeman-Smith](https://karenfreemansmith.github.io)
+
+![screenshot of project running](screenshot.png)
 
 ## Description
-* Design interface:
-  * Login/Create New Account
-  * Photo hint, text answers activity
-  * Text hint, photo answers activity
-  * Text hint, text answers activity
-  * Scorecard Activity
-  * Detail (card) view
+Capstone Project for Week 5, Android at Epicodus.
+This is a flashcard/quiz type app to help the user learn who's who among US & World leaders.
+
+## Technologies Used
+Java, Android Studio
+
+## Known Issues/To-Do
 * Save to database/Read from database
+
 * Logic for:
-  * Score keeping
-  * Chosing Questions
   * Level of play
   * High Scores(?)
-* Get feedback for right/wrong answers
+
 * Post scores to social media
+
+## Support & Contact
+For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
+
+## Legal
+*Licensed under the GNU General Public License v3.0*
+
+Copyright (c) 2016 Copyright _[Karen Freeman-Smith](https://karenfreemansmith.github.io)_ All Rights Reserved.
