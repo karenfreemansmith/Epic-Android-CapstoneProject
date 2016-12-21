@@ -360,7 +360,533 @@ public class Person {
                     "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/125px-Flag_of_Israel.svg.png",
                     "https://en.wikipedia.org/wiki/File:ISR_orthographic.svg");
                 break;
+case 26 :
+randomPerson = new Person("Joe Biden",
+      "Vice President",
+      "the United States of America",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/Vice_President_of_the_United_States",
+      "https://en.wikipedia.org/wiki/Joe_Biden",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
 
+case 27 :
+randomPerson = new Person("Paul Ryan",
+      "Speaker of the House of Representatives",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 28 :
+randomPerson = new Person("John Roberts",
+      "Chief Justice of the United States",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 29 :
+randomPerson = new Person("Jimmy Carter",
+      "Former President",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 30 :
+randomPerson = new Person("George H.W. Bush",
+      "Former President",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 31 :
+randomPerson = new Person("Bill Clinton",
+      "Former President",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 32 :
+randomPerson = new Person("George W. Bush",
+      "Former President",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 33 :
+randomPerson = new Person("John Kerry",
+      "Secretary of State",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 34 :
+randomPerson = new Person("Ban Ki-moon",
+      "Secretary-General",
+      "the United Nations",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Reuven_Rivlin_as_the_president_of_Israel.jpg/220px-Reuven_Rivlin_as_the_president_of_Israel.jpg",
+      "https://en.wikipedia.org/wiki/President_of_Israel",
+      "https://en.wikipedia.org/wiki/Reuven_Rivlin",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Flag_of_Israel.svg/125px-Flag_of_Israel.svg.png",
+      "https://en.wikipedia.org/wiki/File:ISR_orthographic.svg");
+break;
+
+case 35 :
+randomPerson = new Person("Anthony Kennedy",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 36 :
+randomPerson = new Person("Clarence Thomas",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 37 :
+randomPerson = new Person("Ruth Bader Ginsburg",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 38 :
+randomPerson = new Person("Stephen Breyer",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 39 :
+randomPerson = new Person("Samuel Alito",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 40 :
+randomPerson = new Person("Sonia Sotomayor",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 41 :
+randomPerson = new Person("Elena Kagan",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 42 :
+randomPerson = new Person("(vacant seat)",
+      "Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 43 :
+randomPerson = new Person("John Paul Stevens",
+      "Retired Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 44 :
+randomPerson = new Person("Sandra Day O'Connor",
+      "Retired Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 45 :
+randomPerson = new Person("David Souter",
+      "Retired Associate Justice of the Supreme Court",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 46 :
+randomPerson = new Person("Jack Lew",
+      "Secretary of the Treasury",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 47 :
+randomPerson = new Person("Ash Carter",
+      "Secretary of Defense",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 48 :
+randomPerson = new Person("Loretta Lynch",
+      "Attorney General",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 49 :
+randomPerson = new Person("Sally Jewell",
+      "Secretary of the Interior",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 50 :
+randomPerson = new Person("Tom Vilsack",
+      "Secretary of Agriculture",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 51 :
+randomPerson = new Person("Penny Pritzker",
+      "Secretary of Commerce",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 52 :
+randomPerson = new Person("Tom Perez",
+      "Secretary of Labor",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 53 :
+randomPerson = new Person("Sylvia Burwell",
+      "Secretary of Health and Human Services",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 54 :
+randomPerson = new Person("Julián Castro",
+      "Secretary of Housing and Urban Development",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 55 :
+randomPerson = new Person("Anthony Foxx",
+      "Secretary of Transportation",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 56 :
+randomPerson = new Person("Ernest Moniz",
+      "Secretary of Energy",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 57 :
+randomPerson = new Person("John King",
+      "Secretary of Education",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 58 :
+randomPerson = new Person("Bob McDonald",
+      "Secretary of Veterans Affairs",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 59 :
+randomPerson = new Person("Jeh Johnson",
+      "Secretary of Homeland Security",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 60 :
+randomPerson = new Person("Denis McDonough",
+      "White House Chief of Staff",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 61 :
+randomPerson = new Person("Shaun Donovan",
+      "Director of the Office of Management and Budget",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 62 :
+randomPerson = new Person("Michael Botticelli",
+      "Director of National Drug Control Policy",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 63 :
+randomPerson = new Person("Michael Froman",
+      "Trade Representative",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 64 :
+randomPerson = new Person("Jim Clapper",
+      "Director of National Intelligence",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 65 :
+randomPerson = new Person("Samantha Power",
+      "Ambassador to the United Nations",
+      "the United States of America",
+      ".jpg",
+      "officeurl",
+      "https://en.wikipedia.org/wiki/Dick_Cheney",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 66 :
+randomPerson = new Person("Orrin Hatch",
+      "President pro tempore of the Senate",
+      "the United States of America",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/President_pro_tempore_of_the_United_States_Senate",
+      "https://en.wikipedia.org/wiki/Orrin_Hatch",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 67 :
+randomPerson = new Person("Patrick Leahy",
+      "President pro tempore emeritus of the Senate",
+      "the United States of America",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/President_pro_tempore_of_the_United_States_Senate#President_pro_tempore_emeritus",
+      "https://en.wikipedia.org/wiki/Patrick_Leahy",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 68 :
+randomPerson = new Person("Thad Cochran",
+      "Senator",
+      "Mississippi",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Mississippi",
+      "https://en.wikipedia.org/wiki/Thad_Cochran",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 69 :
+randomPerson = new Person("Chuck Grassley",
+      "Senator",
+      "Iowa",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Iowa",
+      "https://en.wikipedia.org/wiki/Chuck_Grassley",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 70 :
+randomPerson = new Person("Mitch McConnell",
+      "Senator",
+      "Kentucky",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Kentucky",
+      "https://en.wikipedia.org/wiki/Mitch_McConnell",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 71 :
+randomPerson = new Person("Barbara Mikulski",
+      "Senator",
+      "Maryland",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Maryland",
+      "https://en.wikipedia.org/wiki/Barbara_Mikulski",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 72 :
+randomPerson = new Person("Richard Shelby",
+      "Senator",
+      "Alabama",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Alabama",
+      "https://en.wikipedia.org/wiki/Richard_Shelby",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
+
+case 73 :
+randomPerson = new Person("John McCain",
+      "Senator",
+      "Arizona",
+      ".jpg",
+      "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Arizona",
+      "https://en.wikipedia.org/wiki/John_McCain",
+      "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+break;
             default :
                 randomPerson = new Person("Not Found", "Minister","Something is Wrong", "http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg", "", "", "","");
         }
