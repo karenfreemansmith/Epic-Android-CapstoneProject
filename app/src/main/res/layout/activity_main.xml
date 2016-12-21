@@ -19,9 +19,9 @@
         android:layout_alignParentBottom="false"
         android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
-        android:background="#99ffffff"
         android:padding="12dp"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:background="@layout/rounded_corners"/>
 
     <Button
         android:layout_width="match_parent"
@@ -29,6 +29,7 @@
         android:text="Play"
         android:id="@+id/buttonPlay"
         android:layout_above="@+id/buttonHighScores"
+        android:background="@layout/rounded_corners"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -38,6 +39,7 @@
         android:text="Medium"
         android:id="@+id/buttonMedium"
         android:layout_below="@+id/buttonPlay"
+        android:background="@layout/rounded_corners"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -47,6 +49,7 @@
         android:text="Difficult"
         android:id="@+id/buttonDifficult"
         android:layout_below="@+id/buttonMedium"
+        android:background="@layout/rounded_corners"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
@@ -55,6 +58,7 @@
         android:layout_height="wrap_content"
         android:text="View High Scores"
         android:id="@+id/buttonHighScores"
+        android:background="@layout/rounded_corners"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
