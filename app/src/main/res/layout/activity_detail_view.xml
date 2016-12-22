@@ -13,9 +13,10 @@
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:id="@+id/imageViewPerson"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_margin="5dp"
+        android:layout_above="@+id/buttonLayout"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +26,8 @@
         android:id="@+id/textViewName"
         android:layout_below="@+id/imageViewPerson"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="18dp" />
+        android:padding="5dp"
+        android:layout_alignParentTop="true"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +36,8 @@
         android:text="Title"
         android:id="@+id/textViewTitle"
         android:layout_below="@+id/textViewName"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -42,9 +45,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="false"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/textViewTitle"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="15dp">
+        android:layout_marginTop="15dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttonLayout">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -56,9 +60,6 @@
                 android:layout_height="wrap_content"
                 android:text="About Title"
                 android:id="@+id/buttonAboutTitle"
-                android:layout_below="@+id/textViewTitle"
-                android:layout_toRightOf="@+id/textViewTitle"
-                android:layout_toEndOf="@+id/textViewTitle"
                 android:layout_weight="50" />
 
             <Button
@@ -66,7 +67,6 @@
                 android:layout_height="wrap_content"
                 android:text="About Person"
                 android:id="@+id/buttonAboutPerson"
-                android:layout_alignTop="@+id/buttonAboutTitle"
                 android:layout_toLeftOf="@+id/textViewName"
                 android:layout_toStartOf="@+id/textViewName"
                 android:layout_weight="50" />
@@ -77,16 +77,13 @@
             android:layout_height="wrap_content"
             android:text="Next Question"
             android:id="@+id/buttonNextQuestion"
-            android:layout_below="@+id/buttonAboutPerson"
-            android:layout_toRightOf="@+id/buttonAboutPerson"
-            android:layout_toEndOf="@+id/buttonAboutPerson" />
+            />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Quit &amp; Score"
             android:id="@+id/buttonQuitScore"
-            android:layout_below="@+id/buttonNextQuestion"
             android:layout_centerHorizontal="true" />
     </LinearLayout>
 
