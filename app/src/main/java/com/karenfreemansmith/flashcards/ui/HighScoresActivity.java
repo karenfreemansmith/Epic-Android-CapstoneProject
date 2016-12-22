@@ -4,6 +4,8 @@ import android.app.ListActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -11,6 +13,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.karenfreemansmith.flashcards.Constants;
 import com.karenfreemansmith.flashcards.R;
 import com.karenfreemansmith.flashcards.adapters.HighScoreAdapter;
@@ -22,6 +25,8 @@ public class HighScoresActivity extends AppCompatActivity {
     private ListView mListView;
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
+
+    private String mUser = "KAS";
     private String mHighScores[]=new String[10];
     private String mScore;
     private String mTotal;
@@ -35,6 +40,9 @@ public class HighScoresActivity extends AppCompatActivity {
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mSharedPreferences.edit();
+
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        mUser = user.getDisplayName();
 
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
         mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
@@ -64,7 +72,7 @@ public class HighScoresActivity extends AppCompatActivity {
         mPercentScore = (mTop/mBottom)*100;
         for(int i=0; i<mHighScores.length; i++) {
             //for resetting scores if neeed:
-            //  mHighScores[i]="0";
+            //  mHighScores[i]="0.1";
             if (Float.parseFloat(mHighScores[i]) <= mPercentScore) {
                 String temp = mHighScores[i];
                 mHighScores[i] = String.valueOf(mPercentScore);
@@ -74,7 +82,7 @@ public class HighScoresActivity extends AppCompatActivity {
 
         // display scores with list adapter
         mListView = (ListView) findViewById(R.id.listView);
-        HighScoreAdapter adapter = new HighScoreAdapter(this, android.R.layout.simple_list_item_1, mHighScores, "KAS");
+        HighScoreAdapter adapter = new HighScoreAdapter(this, android.R.layout.simple_list_item_1, mHighScores, mUser);
         mListView.setAdapter(adapter);
 
         // save new scores to shared preferences

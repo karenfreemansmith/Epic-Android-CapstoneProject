@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -13,6 +14,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 import com.karenfreemansmith.flashcards.R;
 
 import butterknife.Bind;
@@ -90,12 +92,12 @@ public class NewAccountActivity extends AppCompatActivity {
     }
 
     private void createNewUser() {
-        final String name = mName.getText().toString().trim();
         final String email = mEmail.getText().toString().trim();
         final String password = mPassword.getText().toString().trim();
         final String confirm = mConfirm.getText().toString().trim();
 
         mAuthProgressDialog.show();
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
@@ -103,12 +105,32 @@ public class NewAccountActivity extends AppCompatActivity {
                         mAuthProgressDialog.dismiss();
                         if(task.isSuccessful()) {
                             Toast.makeText(NewAccountActivity.this, "Authentication Successful", Toast.LENGTH_LONG);
+                            createFirebaseUserProfile(task.getResult().getUser());
                         } else {
                             Toast.makeText(NewAccountActivity.this, "Authentication Failed", Toast.LENGTH_LONG);
                         }
                     }
                 });
 
+    }
+
+    private void createFirebaseUserProfile(final FirebaseUser user) {
+        final String name = mName.getText().toString().trim();
+        UserProfileChangeRequest addProfileName = new UserProfileChangeRequest.Builder()
+            .setDisplayName(name)
+            .build();
+
+        user.updateProfile(addProfileName)
+            .addOnCompleteListener(new OnCompleteListener<Void>() {
+
+                @Override
+                public void onComplete(@NonNull Task<Void> task) {
+                    if (task.isSuccessful()) {
+                        Log.d("add user name", user.getDisplayName());
+                    }
+                }
+
+            });
     }
 
     private boolean isValidEmail(String email) {
