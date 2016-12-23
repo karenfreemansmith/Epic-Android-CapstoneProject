@@ -9,16 +9,26 @@ Capstone Project for Week 5, Android at Epicodus.
 This is a flashcard/quiz type app to help the user learn who's who among US & World leaders.
 
 ## Technologies Used
-Java, Android Studio
+Java, Android Studio, Firebase Authentication
 
-## Known Issues/To-Do
-* Save to database/Read from database
+## Known Issues
+* No landscape layouts
+* Does not persist question when rotated
 
-* Logic for:
-  * Level of play
-  * High Scores(?)
+## Future Enhancements
+* Add more people
+    * Heads of State (about 2-400)
+    * Senators (almost done...)
+    * Governors (50)
+    * Congressional Representatives (400+)
+    * Ambassadors (to and from the US)
 
-* Post scores to social media
+* Add levels of difficulty
+  * At this point the number of people in the list represent the difficulty. It will start with level 1 having a small set of people (12-24?) and automatically adding another set when they reach a certain level of success (for example getting all 100% on the high scores). The level information will be stored on the phone.
+
+* Post scores/level promotions to social media with link to play store app
+
+* Put the app on the play store.
 
 ## Support & Contact
 For questions, concerns, or suggestions please email karenfreemansmith@gmail.com
