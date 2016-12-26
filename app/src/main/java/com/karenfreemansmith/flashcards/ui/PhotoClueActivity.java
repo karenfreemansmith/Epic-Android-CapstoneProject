@@ -45,7 +45,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
-        mQuestion = new Question();
+        mQuestion = new Question(1);
         String clueUrl="http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg";
         // set clue = "correct" person...
         if(mQuestion.getPerson1().isCorrectAnswer()) {

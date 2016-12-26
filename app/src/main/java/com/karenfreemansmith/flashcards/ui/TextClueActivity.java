@@ -47,7 +47,7 @@ public class TextClueActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
 
-        mQuestion = new Question();
+        mQuestion = new Question(1);
         String clueText="something bad happened";
 
         if(mQuestion.getPerson1().isCorrectAnswer()) {

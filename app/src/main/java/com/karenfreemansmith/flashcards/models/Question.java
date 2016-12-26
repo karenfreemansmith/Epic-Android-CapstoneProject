@@ -11,19 +11,19 @@ public class Question {
     Person mPerson3;
     Person mPerson4;
 
-    public Question() {
-        mPerson1 = Person.getRandomPerson();
-        mPerson2 = Person.getRandomPerson();
+    public Question(int level) {
+        mPerson1 = Person.getRandomPerson(level);
+        mPerson2 = Person.getRandomPerson(level);
         while(mPerson2.getName().equals(mPerson1.getName())) {
-            mPerson2 = Person.getRandomPerson();
+            mPerson2 = Person.getRandomPerson(level);
         }
-        mPerson3 = Person.getRandomPerson();
+        mPerson3 = Person.getRandomPerson(level);
         while(mPerson3.getName().equals(mPerson1.getName())||mPerson3.getName().equals(mPerson2.getName())) {
-            mPerson3 = Person.getRandomPerson();
+            mPerson3 = Person.getRandomPerson(level);
         }
-        mPerson4 = Person.getRandomPerson();
+        mPerson4 = Person.getRandomPerson(level);
         while(mPerson4.getName().equals(mPerson1.getName())||mPerson4.getName().equals(mPerson2.getName())||mPerson4.getName().equals(mPerson3.getName())) {
-            mPerson4 = Person.getRandomPerson();
+            mPerson4 = Person.getRandomPerson(level);
         }
         this.setAnswer();
         // how to avoid duplicates?
