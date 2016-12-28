@@ -7,7 +7,7 @@ import java.util.Random;
  */
 public class Person {
     public static final int LEVEL_1 = 67;
-    public static final int LEVEL_2 = 172;
+    public static final int LEVEL_2 = 119;  // needs to be updated as list is expanded!!!
     private String country;
     private String flag;
     private String history;
@@ -118,7 +118,7 @@ public class Person {
                 dataSize = LEVEL_1;
         }
         Person randomPerson = new Person("Not Found", "Minister","Something is Wrong", "http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg", "", "", "","");
-        Person[] people = new Person[dataSize];
+        Person[] people = new Person[172];
 
         //Add people to array...
         people[0] = new Person("Barrak Obama",
@@ -961,45 +961,117 @@ public class Person {
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
         people[105] = new Person("Claire McCaskill",
             "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+            "Missouri",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cm_official_photo_113th_Congress.jpg/400px-Cm_official_photo_113th_Congress.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Missouri",
+            "https://en.wikipedia.org/wiki/Claire_McCaskill",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
         people[106] = new Person("Amy Klobuchar",
             "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+            "Minnesota",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Amy_Klobuchar%2C_official_portrait%2C_113th_Congress.jpg/480px-Amy_Klobuchar%2C_official_portrait%2C_113th_Congress.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Minnesota",
+            "https://en.wikipedia.org/wiki/Amy_Klobuchar",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
         people[107] = new Person("Sheldon Whitehouse",
             "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+            "Rhode Island",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sheldon_Whitehouse_2010.jpg/474px-Sheldon_Whitehouse_2010.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Rhode_Island",
+            "https://en.wikipedia.org/wiki/Sheldon_Whitehouse",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
         people[108] = new Person("Jon Tester",
             "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+            "Montana",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Jon_Tester%2C_official_110th_Congress_photo.jpg/473px-Jon_Tester%2C_official_110th_Congress_photo.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Montana",
+            "https://en.wikipedia.org/wiki/Jon_Tester",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
         people[109] = new Person("John Barrasso",
             "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+            "Wyoming",
+            "https://upload.wikimedia.org/wikipedia/commons/f/fb/John_Barrasso_official_portrait_112th_Congress.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Wyoming",
+            "https://en.wikipedia.org/wiki/John_Barrasso",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[110] = new Person("name",
+        people[110] = new Person("Roger Wicker",
+            "Senator",
+            "Mississippi",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/SenatorRogerWicker%28R-MS%29.jpg/473px-SenatorRogerWicker%28R-MS%29.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Mississippi",
+            "https://en.wikipedia.org/wiki/Roger_Wicker",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[111] = new Person("Tom Udall",
+            "Senator",
+            "New Mexico",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Tom_Udall_official_Senate_portrait.jpg/473px-Tom_Udall_official_Senate_portrait.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_New_Mexico",
+            "https://en.wikipedia.org/wiki/Tom_Udall",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[112] = new Person("Jeanne Shaheen",
+            "Senator",
+            "New Hampshire",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Jeanne_Shaheen%2C_official_Senate_photo_portrait%2C_2009.jpg/473px-Jeanne_Shaheen%2C_official_Senate_photo_portrait%2C_2009.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_New_Hampshire",
+            "https://en.wikipedia.org/wiki/Jeanne_Shaheen",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[113] = new Person("Mark Warner",
+            "Senator",
+            "Virginia",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Mark_Warner%2C_official_111th_Congress_photo_portrait.jpg/473px-Mark_Warner%2C_official_111th_Congress_photo_portrait.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Virginia",
+            "https://en.wikipedia.org/wiki/Mark_Warner",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[114] = new Person("Jim Risch",
+            "Senator",
+            "Idaho",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Jim_Risch_official_portrait.jpg/450px-Jim_Risch_official_portrait.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Idaho",
+            "https://en.wikipedia.org/wiki/Jim_Risch",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[115] = new Person("Jeff Merkley",
+            "Senator",
+            "Oregon",
+            "https://upload.wikimedia.org/wikipedia/commons/0/0a/Merkley_official_photo.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Oregon",
+            "https://en.wikipedia.org/wiki/Jeff_Merkley",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[116] = new Person("Michael Bennet",
+            "Senator",
+            "Colorado",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Michael_Bennet_Official_Photo.jpg/473px-Michael_Bennet_Official_Photo.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Colorado",
+            "https://en.wikipedia.org/wiki/Michael_Bennet",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[117] = new Person("Kirsten Gillibrand",
+            "Senator",
+            "New York",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/SenatorGillibrandpic.jpg/465px-SenatorGillibrandpic.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_New_York",
+            "https://en.wikipedia.org/wiki/Kirsten_Gillibrand",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[118] = new Person("Al Franken",
+            "Senator",
+            "Minnesota",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Al_Franken_Official_Senate_Portrait.jpg/473px-Al_Franken_Official_Senate_Portrait.jpg",
+            "https://en.wikipedia.org/wiki/List_of_United_States_Senators_from_Minnesota",
+            "https://en.wikipedia.org/wiki/Al_Franken",
+            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
+        people[119] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1007,7 +1079,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[111] = new Person("name",
+        people[120] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1015,7 +1087,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[112] = new Person("name",
+        people[121] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1023,7 +1095,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[113] = new Person("name",
+        people[122] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1031,7 +1103,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[114] = new Person("name",
+        people[123] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1039,7 +1111,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[115] = new Person("name",
+        people[124] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1047,7 +1119,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[116] = new Person("Roger Wicker",
+        people[125] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1055,7 +1127,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[117] = new Person("Tom Udall",
+        people[126] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1063,7 +1135,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[118] = new Person("Jeanne Shaheen",
+        people[127] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1071,7 +1143,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[119] = new Person("Mark Warner",
+        people[128] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1079,7 +1151,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[120] = new Person("Jim Risch",
+        people[129] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1087,7 +1159,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[121] = new Person("Jeff Merkley",
+        people[130] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1095,7 +1167,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[122] = new Person("Michael Bennet",
+        people[131] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1103,7 +1175,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[123] = new Person("Kirsten Gillibrand",
+        people[132] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1111,7 +1183,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[124] = new Person("Al Franken",
+        people[133] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1119,7 +1191,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[125] = new Person("Joe Manchin",
+        people[134] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1127,7 +1199,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[126] = new Person("Chris Coons",
+        people[135] = new Person("Mn",
             "Senator",
             "location",
             "photo.jpg",
@@ -1135,7 +1207,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[127] = new Person("Mark Kirk",
+        people[136] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1143,7 +1215,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[128] = new Person("Dan Coats",
+        people[137] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1151,7 +1223,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[129] = new Person("Roy Blunt",
+        people[138] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1159,7 +1231,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[130] = new Person("Jerry Moran",
+        people[140] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1167,7 +1239,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[131] = new Person("Rob Portman",
+        people[141] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1175,7 +1247,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[132] = new Person("John Boozman",
+        people[142] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1183,7 +1255,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[133] = new Person("Pat Toomey",
+        people[143] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1191,7 +1263,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[134] = new Person("John Hoeven",
+        people[144] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1199,7 +1271,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[135] = new Person("Marco Rubio",
+        people[145] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1207,7 +1279,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[136] = new Person("Ron Johnson",
+        people[146] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1215,7 +1287,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[137] = new Person("Rand Paul",
+        people[147] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1223,7 +1295,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[138] = new Person("Richard Blumenthal",
+        people[148] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1231,7 +1303,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[140] = new Person("Mike Lee",
+        people[149] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1239,7 +1311,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[141] = new Person("Kelly Ayotte",
+        people[150] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1247,7 +1319,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[142] = new Person("Dean Heller",
+        people[151] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1255,7 +1327,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[143] = new Person("Brian Schatz",
+        people[152] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1263,7 +1335,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[144] = new Person("Tim Scott",
+        people[153] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1271,7 +1343,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[145] = new Person("Tammy Baldwin",
+        people[154] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1279,7 +1351,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[146] = new Person("Jeff Flake",
+        people[155] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1287,7 +1359,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[147] = new Person("Joe Donnelly",
+        people[156] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1295,7 +1367,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[148] = new Person("Chris Murphy",
+        people[157] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1303,7 +1375,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[149] = new Person("Mazie Hirono",
+        people[158] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1311,7 +1383,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[150] = new Person("Martin Heinrich",
+        people[159] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1319,7 +1391,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[151] = new Person("Angus King",
+        people[160] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1327,7 +1399,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[152] = new Person("Tim Kaine",
+        people[161] = new Person("ny",
             "Senator",
             "location",
             "photo.jpg",
@@ -1335,7 +1407,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[153] = new Person("Ted Cruz",
+        people[162] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1343,7 +1415,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[154] = new Person("Elizabeth Warren",
+        people[163] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1351,7 +1423,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[155] = new Person("Deb Fischer",
+        people[164] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1359,7 +1431,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[156] = new Person("Heidi Heitkamp",
+        people[165] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1367,7 +1439,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[157] = new Person("Ed Markey",
+        people[166] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1375,7 +1447,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[158] = new Person("Cory Booker",
+        people[167] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1383,7 +1455,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[159] = new Person("Shelley Moore Capito",
+        people[168] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1391,7 +1463,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[160] = new Person("Gary Peters",
+        people[169] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1399,7 +1471,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[161] = new Person("Bill Cassidy",
+        people[170] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
@@ -1407,79 +1479,7 @@ public class Person {
             "https:person",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[162] = new Person("Cory Gardner",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[163] = new Person("James Lankford",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[164] = new Person("Tom Cotton",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[165] = new Person("Steve Daines",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[166] = new Person("Mike Rounds",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[167] = new Person("David Perdue",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[168] = new Person("Thom Tillis",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[169] = new Person("Joni Ernst",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[170] = new Person("Ben Sasse",
-            "Senator",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[171] = new Person("Dan Sullivan",
+        people[171] = new Person("n",
             "Senator",
             "location",
             "photo.jpg",
