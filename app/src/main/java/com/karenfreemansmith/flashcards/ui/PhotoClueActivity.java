@@ -32,6 +32,7 @@ public class PhotoClueActivity extends AppCompatActivity {
     private SharedPreferences.Editor mEditor;
     private String mScore;
     private String mTotal;
+    private int mLevel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +44,10 @@ public class PhotoClueActivity extends AppCompatActivity {
         mEditor = mSharedPreferences.edit();
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
         mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
+        mLevel = Integer.parseInt(mSharedPreferences.getString(Constants.PREFERENCES_LEVEL_KEY, null));
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
-        mQuestion = new Question(1);
+        mQuestion = new Question(mLevel);
         String clueUrl="http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg";
         // set clue = "correct" person...
         if(mQuestion.getPerson1().isCorrectAnswer()) {

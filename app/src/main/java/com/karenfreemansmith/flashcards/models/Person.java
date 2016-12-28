@@ -8,6 +8,7 @@ import java.util.Random;
 public class Person {
     public static final int LEVEL_1 = 67;
     public static final int LEVEL_2 = 119;  // needs to be updated as list is expanded!!!
+    public static final int LEVEL_3 = 119;  // will change as more peope are added
     private String country;
     private String flag;
     private String history;
@@ -115,7 +116,7 @@ public class Person {
                 dataSize = LEVEL_2;
                 break;
             default:
-                dataSize = LEVEL_1;
+                dataSize = LEVEL_3;
         }
         Person randomPerson = new Person("Not Found", "Minister","Something is Wrong", "http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg", "", "", "","");
         Person[] people = new Person[172];

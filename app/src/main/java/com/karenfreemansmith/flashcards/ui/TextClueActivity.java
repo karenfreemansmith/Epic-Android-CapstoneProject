@@ -32,6 +32,7 @@ public class TextClueActivity extends AppCompatActivity {
     private SharedPreferences.Editor mEditor;
     private String mScore;
     private String mTotal;
+    private int mLevel;
 
 
     @Override
@@ -44,10 +45,11 @@ public class TextClueActivity extends AppCompatActivity {
         mEditor = mSharedPreferences.edit();
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
         mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
+        mLevel = Integer.parseInt(mSharedPreferences.getString(Constants.PREFERENCES_LEVEL_KEY, null));
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
 
-        mQuestion = new Question(2);
+        mQuestion = new Question(mLevel);
         String clueText="something bad happened";
 
         if(mQuestion.getPerson1().isCorrectAnswer()) {

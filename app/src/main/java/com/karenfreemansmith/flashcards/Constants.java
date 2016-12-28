@@ -6,6 +6,7 @@ package com.karenfreemansmith.flashcards;
 public class Constants {
     public static final String PREFERENCES_SCORE_KEY = "score";
     public static final String PREFERENCES_TOTAL_KEY = "total";
+    public static final String PREFERENCES_LEVEL_KEY = "level";
     public static final String PREFERENCES_HIGHSCORE01_KEY = "hs01";
     public static final String PREFERENCES_HIGHSCORE02_KEY = "hs02";
     public static final String PREFERENCES_HIGHSCORE03_KEY = "hs03";

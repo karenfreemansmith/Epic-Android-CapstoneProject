@@ -26,33 +26,18 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Play"
-        android:id="@+id/buttonPlay"
-        android:layout_above="@+id/buttonHighScores"
-        android:background="@layout/rounded_corners"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="5dp"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Medium"
+        android:text="Play Medium Level"
         android:id="@+id/buttonMedium"
-        android:layout_below="@+id/buttonPlay"
-        android:background="@layout/rounded_corners"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_above="@+id/buttonDifficult"
+        android:background="@layout/rounded_corners"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Difficult"
+        android:text="Play Difficult Level"
         android:id="@+id/buttonDifficult"
-        android:layout_below="@+id/buttonMedium"
-        android:background="@layout/rounded_corners"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_above="@+id/buttonHighScores"
+        android:background="@layout/rounded_corners"/>
 
     <Button
         android:layout_width="match_parent"
@@ -60,7 +45,14 @@
         android:text="View High Scores"
         android:id="@+id/buttonHighScores"
         android:background="@layout/rounded_corners"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play Easy Level"
+        android:id="@+id/buttonPlay"
+        android:background="@layout/rounded_corners"
+        android:layout_above="@+id/buttonMedium"/>
 
 </RelativeLayout>

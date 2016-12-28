@@ -38,35 +38,40 @@ public class MainActivity extends AppCompatActivity {
 
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mSharedPreferences.edit();
-
-        // hiding buttons until level feature is developed
-        mMedium.setVisibility(View.GONE);
-        mDifficult.setVisibility(View.GONE);
-
     }
 
-    private void addToSharedPreferences(String score, String total) {
+    private void addToSharedPreferences(String score, String total, String level) {
         mEditor.putString(Constants.PREFERENCES_SCORE_KEY, score).apply();
         mEditor.putString(Constants.PREFERENCES_TOTAL_KEY, total).apply();
+        mEditor.putString(Constants.PREFERENCES_LEVEL_KEY, level).apply();
     }
 
     @OnClick(R.id.buttonPlay)
     public void startEasy() {
         String score = "0";
         String total = "0";
-        addToSharedPreferences(score, total);
+        String level = "1";
+        addToSharedPreferences(score, total, level);
         Intent intent = new Intent(MainActivity.this, TextClueActivity.class);
         startActivity(intent);
     }
 
     @OnClick(R.id.buttonMedium)
     public void startMedium() {
+        String score = "0";
+        String total = "0";
+        String level = "2";
+        addToSharedPreferences(score, total, level);
         Intent intent = new Intent(MainActivity.this, TextClueActivity.class);
         startActivity(intent);
     }
 
     @OnClick(R.id.buttonDifficult)
     public void startDifficult() {
+        String score = "0";
+        String total = "0";
+        String level = "3";
+        addToSharedPreferences(score, total, level);
         Intent intent = new Intent(MainActivity.this, PhotoClueActivity.class);
         startActivity(intent);
     }
