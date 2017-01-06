@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.karenfreemansmith.flashcards.Constants;
 import com.karenfreemansmith.flashcards.R;
+import com.karenfreemansmith.flashcards.adapters.CircleImage;
 import com.karenfreemansmith.flashcards.models.Person;
 import com.squareup.picasso.Picasso;
 
@@ -56,6 +57,7 @@ public class DetailViewActivity extends AppCompatActivity {
                 .load(intent.getStringExtra("photo"))
                 .resize(240, 240)
                 .centerCrop()
+                .transform(new CircleImage())
                 .into(mPortrait);
     }
 
