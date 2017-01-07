@@ -8,7 +8,7 @@ import java.util.Random;
 public class Person {
     public static final int LEVEL_1 = 67;
     public static final int LEVEL_2 = 166;  // (216 ends level(probably...adds senators & governors)
-    public static final int LEVEL_3 = 216;  // adds foreign heads of state
+    public static final int LEVEL_3 = 226;  // adds foreign heads of state
     private String country;
     private String flag;
     private String history;
@@ -1856,68 +1856,68 @@ public class Person {
             "https://en.wikipedia.org/wiki/Bujar_Nishani",
             "flag",
             "map");
-        people[218] = new Person("n",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[218] = new Person("Abdelaziz Bouteflika",
+            "President",
+            "Algeria",
+            "https://upload.wikimedia.org/wikipedia/commons/7/77/Bouteflika_%28Algiers%2C_Feb_2006%29.jpeg",
+            "https://en.wikipedia.org/wiki/President_of_Algeria",
+            "https://en.wikipedia.org/wiki/Abdelaziz_Bouteflika",
             "https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/125px-Flag_of_the_United_States.svg.png",
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/USA_orthographic.svg/220px-USA_orthographic.svg.png");
-        people[219] = new Person("n",
-            "Governor",
-            "location",
+        people[219] = new Person("José Eduardo dos Santos",
+            "President",
+            "Angola",
             "photo.jpg",
-            "https:job",
-            "https:person",
+            "https://en.wikipedia.org/wiki/President_of_Angola",
+            "https://en.wikipedia.org/wiki/Jos%C3%A9_Eduardo_dos_Santos",
             "flag",
             "map");
-        people[220] = new Person("n",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[220] = new Person("Rodney Williams",
+            "Governor-General",
+            "Antigua and Barbuda",
+            "",
+            "https://en.wikipedia.org/wiki/Governor-General_of_Antigua_and_Barbuda",
+            "https://en.wikipedia.org/wiki/Rodney_Williams_(governor-general)",
             "flag",
             "map");
-        people[221] = new Person("n",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[221] = new Person("Mauricio Macri",
+            "President",
+            "Argentina",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Presidente_Macri_en_el_Sillon_de_Rivadavia_%28cropped%29.jpg/436px-Presidente_Macri_en_el_Sillon_de_Rivadavia_%28cropped%29.jpg",
+            "https://en.wikipedia.org/wiki/President_of_Argentina",
+            "https://en.wikipedia.org/wiki/Mauricio_Macri",
             "flag",
             "map");
-        people[222] = new Person("name",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[222] = new Person("Serzh Sargsyan",
+            "President",
+            "Armenia",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Serzh_Sargsyan_official_portrait_from_president-am.jpg/451px-Serzh_Sargsyan_official_portrait_from_president-am.jpg",
+            "https://en.wikipedia.org/wiki/President_of_Armenia",
+            "https://en.wikipedia.org/wiki/Serzh_Sargsyan",
             "flag",
             "map");
-        people[223] = new Person("name",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[223] = new Person("Peter Cosgrove",
+            "Governor-General",
+            "Australia",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Peter_Cosgrove_2014_crop.jpg/436px-Peter_Cosgrove_2014_crop.jpg",
+            "https://en.wikipedia.org/wiki/Governor-General_of_Australia",
+            "https://en.wikipedia.org/wiki/Peter_Cosgrove",
             "flag",
             "map");
-        people[224] = new Person("name",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[224] = new Person("Alexander Van der Bellen",
+            "Federal President",
+            "Ausgtria",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Alexander_Van_der_Bellen_2016.jpg/391px-Alexander_Van_der_Bellen_2016.jpg",
+            "https://en.wikipedia.org/wiki/President_of_Austria",
+            "https://en.wikipedia.org/wiki/Alexander_Van_der_Bellen",
             "flag",
             "map");
-        people[225] = new Person("name",
-            "Governor",
-            "location",
-            "photo.jpg",
-            "https:job",
-            "https:person",
+        people[225] = new Person("Ilham Aliyev",
+            "President",
+            "Azerbaijan",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Azerbaijani_President_Aliyev_Participate_in_a_Meeting_With_Secretary_Kerry_and_Other_Global_Leaders_on_the_Nagorno-Karabakh_Conflict_in_Vienna_%2826452164084%29.jpg/405px-Azerbaijani_President_Aliyev_Participate_in_a_Meeting_With_Secretary_Kerry_and_Other_Global_Leaders_on_the_Nagorno-Karabakh_Conflict_in_Vienna_%2826452164084%29.jpg",
+            "https://en.wikipedia.org/wiki/President_of_Azerbaijan",
+            "https://en.wikipedia.org/wiki/Ilham_Aliyev",
             "flag",
             "map");
         people[226] = new Person("n",
@@ -3024,7 +3024,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[364] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3032,7 +3032,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[365] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3040,7 +3040,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[366] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3048,7 +3048,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[367] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3056,7 +3056,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[368] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3064,7 +3064,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[369] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3072,7 +3072,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[220] = new Person("n",
+        people[370] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3080,7 +3080,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[221] = new Person("n",
+        people[371] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3088,7 +3088,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[222] = new Person("name",
+        people[372] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3096,7 +3096,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[223] = new Person("name",
+        people[373] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3104,7 +3104,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[374] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3112,7 +3112,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[375] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3120,7 +3120,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[376] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3128,7 +3128,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[377] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3136,7 +3136,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[378] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3144,7 +3144,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[379] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3152,7 +3152,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[220] = new Person("n",
+        people[380] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3160,7 +3160,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[221] = new Person("n",
+        people[381] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3168,7 +3168,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[222] = new Person("name",
+        people[382] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3176,7 +3176,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[223] = new Person("name",
+        people[383] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3184,7 +3184,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[384] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3192,7 +3192,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[385] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3200,7 +3200,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[386] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3208,7 +3208,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[387] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3216,7 +3216,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[388] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3224,7 +3224,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[389] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3232,7 +3232,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[220] = new Person("n",
+        people[390] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3240,7 +3240,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[221] = new Person("n",
+        people[391] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3248,7 +3248,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[222] = new Person("name",
+        people[392] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3256,7 +3256,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[223] = new Person("name",
+        people[393] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3264,7 +3264,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[394] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3272,7 +3272,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[395] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3280,7 +3280,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[396] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3288,7 +3288,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[397] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3296,7 +3296,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[398] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3304,7 +3304,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[399] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3312,7 +3312,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[220] = new Person("n",
+        people[400] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3320,7 +3320,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[221] = new Person("n",
+        people[401] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3328,7 +3328,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[222] = new Person("name",
+        people[402] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3336,7 +3336,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[223] = new Person("name",
+        people[403] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3344,7 +3344,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[404] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3352,7 +3352,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[405] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3360,7 +3360,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[406] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3368,7 +3368,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[407] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3376,7 +3376,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[408] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3384,7 +3384,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[409] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3392,7 +3392,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[220] = new Person("n",
+        people[410] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3400,7 +3400,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[221] = new Person("n",
+        people[411] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3408,7 +3408,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[222] = new Person("name",
+        people[412] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3416,7 +3416,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[223] = new Person("name",
+        people[413] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3424,7 +3424,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[414] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3432,7 +3432,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[415] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3440,7 +3440,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[416] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3448,7 +3448,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[417] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3456,7 +3456,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[418] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3464,7 +3464,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[419] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3472,7 +3472,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[220] = new Person("n",
+        people[410] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3480,7 +3480,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[221] = new Person("n",
+        people[411] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3488,7 +3488,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[222] = new Person("name",
+        people[412] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3496,7 +3496,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[223] = new Person("name",
+        people[413] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3504,7 +3504,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[224] = new Person("name",
+        people[414] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3512,7 +3512,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[225] = new Person("name",
+        people[415] = new Person("name",
             "Governor",
             "location",
             "photo.jpg",
@@ -3520,7 +3520,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[226] = new Person("n",
+        people[416] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3528,7 +3528,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[227] = new Person("n",
+        people[417] = new Person("n",
             "Govrnor",
             "location",
             "photo.jpg",
@@ -3536,7 +3536,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[228] = new Person("n",
+        people[418] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
@@ -3544,7 +3544,7 @@ public class Person {
             "https:person",
             "flag",
             "map");
-        people[229] = new Person("n",
+        people[419] = new Person("n",
             "Governor",
             "location",
             "photo.jpg",
