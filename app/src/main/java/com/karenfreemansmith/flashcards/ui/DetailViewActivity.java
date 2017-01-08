@@ -44,7 +44,6 @@ public class DetailViewActivity extends AppCompatActivity {
         mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
-
         Intent intent = getIntent();
 
         mHistoryWiki = intent.getStringExtra("history");

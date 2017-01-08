@@ -128,6 +128,12 @@ public class HighScoresActivity extends AppCompatActivity {
         mEditor.putString(Constants.PREFERENCES_HIGHSCORE10_KEY, mHighScores[9]).apply();
     }
 
+    @OnClick(R.id.buttonStudy)
+    public void test() {
+        Intent intent = new Intent(HighScoresActivity.this, StudyActivity.class);
+        startActivity(intent);
+    }
+
     @OnClick(R.id.buttonLogout)
     public void logout() {
         FirebaseAuth.getInstance().signOut();

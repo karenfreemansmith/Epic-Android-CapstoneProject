@@ -9,6 +9,7 @@ public class Person {
     public static final int LEVEL_1 = 67;
     public static final int LEVEL_2 = 216;
     public static final int LEVEL_3 = 324;  // adds foreign heads of state
+
     private String country;
     private String flag;
     private String history;
@@ -18,6 +19,7 @@ public class Person {
     private String photo;
     private String title;
     private boolean correctAnswer;
+    private int id;
 
     public Person(String name, String title, String country, String photo, String office, String history, String flag, String map) {
         this.name = name;
@@ -105,6 +107,11 @@ public class Person {
         this.correctAnswer = correctAnswer;
     }
 
+    public static Person getPersonById(int id) {
+        Person[] people = createArray();
+        return people[id];
+    }
+
     public static Person getRandomPerson(int level) {
         int dataSize=0;
         // Can/should I pull the collection from the database and do a random on the length of the ArrayList?
@@ -118,9 +125,15 @@ public class Person {
             default:
                 dataSize = LEVEL_3;
         }
-        Person randomPerson = new Person("Not Found", "Minister","Something is Wrong", "http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg", "", "", "","");
-        Person[] people = new Person[426];
 
+        Random randomGenerator = new Random();
+        int rand = randomGenerator.nextInt(dataSize);
+        Person[] people = createArray();
+        return people[rand];
+    }
+
+    private static Person[] createArray() {
+        Person[] people = new Person[425];
         //Add people to array...
         people[0] = new Person("Barrak Obama",
             "President", "the United States of America",
@@ -3553,10 +3566,6 @@ public class Person {
             "flag",
             "map");
 
-
-        Random randomGenerator = new Random();
-        int rand = randomGenerator.nextInt(dataSize);
-
-        return people[rand];
+        return people;
     }
 }
