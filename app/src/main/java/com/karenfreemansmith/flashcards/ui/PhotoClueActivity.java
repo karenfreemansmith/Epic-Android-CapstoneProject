@@ -50,17 +50,17 @@ public class PhotoClueActivity extends AppCompatActivity {
         mQuestion = new Question(mLevel);
         String clueUrl="http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg";
         // set clue = "correct" person...
-        if(mQuestion.getPerson1().isCorrectAnswer()) {
-            clueUrl=mQuestion.getPerson1().getPhoto();
+        if(mQuestion.getPerson1()==mQuestion.getCorrectAnswer()) {
+            clueUrl=Person.getPersonById(mQuestion.getPerson1()).getPhoto();
         }
-        if(mQuestion.getPerson2().isCorrectAnswer()) {
-            clueUrl=mQuestion.getPerson2().getPhoto();
+        if(mQuestion.getPerson2()==mQuestion.getCorrectAnswer()) {
+            clueUrl=Person.getPersonById(mQuestion.getPerson2()).getPhoto();
         }
-        if(mQuestion.getPerson3().isCorrectAnswer()) {
-            clueUrl=mQuestion.getPerson3().getPhoto();
+        if(mQuestion.getPerson3()==mQuestion.getCorrectAnswer()) {
+            clueUrl=Person.getPersonById(mQuestion.getPerson3()).getPhoto();
         }
-        if(mQuestion.getPerson4().isCorrectAnswer()) {
-            clueUrl=mQuestion.getPerson4().getPhoto();
+        if(mQuestion.getPerson4()==mQuestion.getCorrectAnswer()) {
+            clueUrl=Person.getPersonById(mQuestion.getPerson4()).getPhoto();
         }
 
         Picasso.with(PhotoClueActivity.this)
@@ -69,15 +69,15 @@ public class PhotoClueActivity extends AppCompatActivity {
                 .centerCrop()
                 .into(mClue);
 
-        mA.setText(mQuestion.getPerson1().getName());
-        mB.setText(mQuestion.getPerson2().getName());
-        mC.setText(mQuestion.getPerson3().getName());
-        mD.setText(mQuestion.getPerson4().getName());
+        mA.setText(Person.getPersonById(mQuestion.getPerson1()).getName());
+        mB.setText(Person.getPersonById(mQuestion.getPerson2()).getName());
+        mC.setText(Person.getPersonById(mQuestion.getPerson3()).getName());
+        mD.setText(Person.getPersonById(mQuestion.getPerson4()).getName());
     }
 
     @OnClick(R.id.buttonA)
     public void chooseA() {
-        if(mQuestion.getPerson1().isCorrectAnswer()) {
+        if(mQuestion.getPerson1()==mQuestion.getCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
             increaseScore();
         } else {
@@ -85,18 +85,13 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("name", mQuestion.getPerson1().getName());
-        intent.putExtra("photo", mQuestion.getPerson1().getPhoto());
-        intent.putExtra("history", mQuestion.getPerson1().getHistory());
-        intent.putExtra("office", mQuestion.getPerson1().getOffice());
-        intent.putExtra("title", mQuestion.getPerson1().getTitle());
-        intent.putExtra("country", mQuestion.getPerson1().getCountry());
+        intent.putExtra("id", mQuestion.getPerson1());
         startActivity(intent);
     }
 
     @OnClick(R.id.buttonB)
     public void chooseB() {
-        if(mQuestion.getPerson2().isCorrectAnswer()) {
+        if(mQuestion.getPerson2()==mQuestion.getCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
             increaseScore();
         } else {
@@ -104,18 +99,13 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("name", mQuestion.getPerson2().getName());
-        intent.putExtra("photo", mQuestion.getPerson2().getPhoto());
-        intent.putExtra("history", mQuestion.getPerson2().getHistory());
-        intent.putExtra("office", mQuestion.getPerson2().getOffice());
-        intent.putExtra("title", mQuestion.getPerson2().getTitle());
-        intent.putExtra("country", mQuestion.getPerson2().getCountry());
+        intent.putExtra("id", mQuestion.getPerson2());
         startActivity(intent);
     }
 
     @OnClick(R.id.buttonC)
     public void chooseC() {
-        if(mQuestion.getPerson3().isCorrectAnswer()) {
+        if(mQuestion.getPerson3()==mQuestion.getCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
             increaseScore();
         } else {
@@ -123,18 +113,13 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("name", mQuestion.getPerson3().getName());
-        intent.putExtra("photo", mQuestion.getPerson3().getPhoto());
-        intent.putExtra("history", mQuestion.getPerson3().getHistory());
-        intent.putExtra("office", mQuestion.getPerson3().getOffice());
-        intent.putExtra("title", mQuestion.getPerson3().getTitle());
-        intent.putExtra("country", mQuestion.getPerson3().getCountry());
+        intent.putExtra("id", mQuestion.getPerson3());
         startActivity(intent);
     }
 
     @OnClick(R.id.buttonD)
     public void chooseD() {
-        if(mQuestion.getPerson4().isCorrectAnswer()) {
+        if(mQuestion.getPerson4()==mQuestion.getCorrectAnswer()) {
             Toast.makeText(PhotoClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
             increaseScore();
         } else {
@@ -142,12 +127,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("name", mQuestion.getPerson4().getName());
-        intent.putExtra("photo", mQuestion.getPerson4().getPhoto());
-        intent.putExtra("history", mQuestion.getPerson4().getHistory());
-        intent.putExtra("office", mQuestion.getPerson4().getOffice());
-        intent.putExtra("title", mQuestion.getPerson4().getTitle());
-        intent.putExtra("country", mQuestion.getPerson4().getCountry());
+        intent.putExtra("id", mQuestion.getPerson4());
         startActivity(intent);
     }
 

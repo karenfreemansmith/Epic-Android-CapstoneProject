@@ -6,27 +6,28 @@ import java.util.Random;
  * Created by Guest on 12/20/16.
  */
 public class Question {
-    Person mPerson1;
-    Person mPerson2;
-    Person mPerson3;
-    Person mPerson4;
+    private int mPerson1;
+    private int mPerson2;
+    private int mPerson3;
+    private int mPerson4;
+    private int mCorrectAnswer;
 
     public Question(int level) {
         mPerson1 = Person.getRandomPerson(level);
         mPerson2 = Person.getRandomPerson(level);
-        while(mPerson2.getName().equals(mPerson1.getName())) {
+        while(mPerson2==mPerson1) {
             mPerson2 = Person.getRandomPerson(level);
         }
         mPerson3 = Person.getRandomPerson(level);
-        while(mPerson3.getName().equals(mPerson1.getName())||mPerson3.getName().equals(mPerson2.getName())) {
+        while((mPerson3==mPerson1)||(mPerson3==mPerson2)) {
             mPerson3 = Person.getRandomPerson(level);
         }
         mPerson4 = Person.getRandomPerson(level);
-        while(mPerson4.getName().equals(mPerson1.getName())||mPerson4.getName().equals(mPerson2.getName())||mPerson4.getName().equals(mPerson3.getName())) {
+        while((mPerson4==mPerson1)||(mPerson4==mPerson2)||(mPerson4==mPerson3)) {
             mPerson4 = Person.getRandomPerson(level);
         }
         this.setAnswer();
-        // how to avoid duplicates?
+
     }
 
     public void setAnswer() {
@@ -35,49 +36,57 @@ public class Question {
 
         switch(rand) {
             case 1:
-                mPerson1.setCorrectAnswer(true);
+                mCorrectAnswer=mPerson1;
                 break;
             case 2:
-                mPerson2.setCorrectAnswer(true);
+                mCorrectAnswer=mPerson2;
                 break;
             case 3:
-                mPerson3.setCorrectAnswer(true);
+                mCorrectAnswer=mPerson3;
                 break;
             case 4:
-                mPerson4.setCorrectAnswer(true);
+                mCorrectAnswer=mPerson4;
                 break;
         }
     }
 
-    public Person getPerson1() {
+    public int getPerson1() {
         return mPerson1;
     }
 
-    public void setPerson1(Person Person1) {
+    public void setPerson1(int Person1) {
         this.mPerson1 = Person1;
     }
 
-    public Person getPerson2() {
+    public int getPerson2() {
         return mPerson2;
     }
 
-    public void setPerson2(Person Person2) {
+    public void setPerson2(int Person2) {
         this.mPerson2 = Person2;
     }
 
-    public Person getPerson3() {
+    public int getPerson3() {
         return mPerson3;
     }
 
-    public void setPerson3(Person Person3) {
+    public void setPerson3(int Person3) {
         this.mPerson3 = Person3;
     }
 
-    public Person getPerson4() {
+    public int getPerson4() {
         return mPerson4;
     }
 
-    public void setPerson4(Person Person4) {
+    public void setPerson4(int Person4) {
         this.mPerson4 = Person4;
+    }
+
+    public int getCorrectAnswer() {
+        return mCorrectAnswer;
+    }
+
+    public void setCorrectAnswer(int correctAnswer) {
+        mCorrectAnswer = correctAnswer;
     }
 }

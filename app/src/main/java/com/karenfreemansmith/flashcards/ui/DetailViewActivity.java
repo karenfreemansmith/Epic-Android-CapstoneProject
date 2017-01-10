@@ -28,6 +28,7 @@ public class DetailViewActivity extends AppCompatActivity {
 
     private SharedPreferences mSharedPreferences;
 
+    private int mId;
     private String mHistoryWiki;
     private String mOfficeWiki;
     private String mScore;
@@ -45,19 +46,22 @@ public class DetailViewActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
         Intent intent = getIntent();
+        mId = intent.getIntExtra("id", 0);
 
-        mHistoryWiki = intent.getStringExtra("history");
-        mOfficeWiki = intent.getStringExtra("office");
+        Person thisPerson = Person.getPersonById(mId);
 
-        mName.setText(intent.getStringExtra("name"));
-        mTitle.setText(intent.getStringExtra("title") + " of " + intent.getStringExtra("country"));
+        mHistoryWiki = thisPerson.getHistory();
+        mOfficeWiki = thisPerson.getOffice();
+
+        mName.setText(thisPerson.getName());
+        mTitle.setText(thisPerson.getTitle() + " of " + thisPerson.getCountry());
 
         Picasso.with(DetailViewActivity.this)
-                .load(intent.getStringExtra("photo"))
-                .resize(240, 240)
-                .centerCrop()
-                .transform(new CircleImage())
-                .into(mPortrait);
+            .load(thisPerson.getPhoto())
+            .resize(240, 240)
+            .centerCrop()
+            .transform(new CircleImage())
+            .into(mPortrait);
     }
 
     @OnClick(R.id.buttonAboutPerson)

@@ -18,7 +18,6 @@ public class Person {
     private String office;
     private String photo;
     private String title;
-    private boolean correctAnswer;
     private int id;
 
     public Person(String name, String title, String country, String photo, String office, String history, String flag, String map) {
@@ -30,7 +29,6 @@ public class Person {
         this.history = history;
         this.flag = flag;
         this.map = map;
-        this.correctAnswer = false;
     }
 
     public String getCountry() {
@@ -97,20 +95,12 @@ public class Person {
         this.title = title;
     }
 
-    public boolean isCorrectAnswer() {
-        return correctAnswer;
-    }
-
-    public void setCorrectAnswer(boolean correctAnswer) {
-        this.correctAnswer = correctAnswer;
-    }
-
     public static Person getPersonById(int id) {
         Person[] people = createArray();
         return people[id];
     }
 
-    public static Person getRandomPerson(int level) {
+    public static int getRandomPerson(int level) {
         int dataSize=0;
         // Can/should I pull the collection from the database and do a random on the length of the ArrayList?
         switch (level) {
@@ -126,8 +116,7 @@ public class Person {
 
         Random randomGenerator = new Random();
         int rand = randomGenerator.nextInt(dataSize);
-        Person[] people = createArray();
-        return people[rand];
+        return rand;
     }
 
     private static Person[] createArray() {
