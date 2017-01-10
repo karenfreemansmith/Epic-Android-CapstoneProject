@@ -33,8 +33,6 @@ public class Person {
         this.correctAnswer = false;
     }
 
-
-
     public String getCountry() {
         return this.country;
     }

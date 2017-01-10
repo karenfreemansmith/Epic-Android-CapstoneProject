@@ -12,6 +12,7 @@ import android.widget.TextView;
 import com.karenfreemansmith.flashcards.Constants;
 import com.karenfreemansmith.flashcards.R;
 import com.karenfreemansmith.flashcards.adapters.CircleImage;
+import com.karenfreemansmith.flashcards.models.Person;
 import com.squareup.picasso.Picasso;
 
 import java.util.Random;
@@ -27,12 +28,9 @@ public class StudyActivity extends AppCompatActivity {
   TextView mName;
   @Bind(R.id.textViewTitle) TextView mTitle;
 
-  private SharedPreferences mSharedPreferences;
-
+  private int mId;
   private String mHistoryWiki;
   private String mOfficeWiki;
-  private String mScore;
-  private String mTotal;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
@@ -40,22 +38,19 @@ public class StudyActivity extends AppCompatActivity {
     setContentView(R.layout.activity_study);
     ButterKnife.bind(this);
 
-    mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-    mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
-    mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
-    getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
-
-
     Intent intent = getIntent();
+    mId = intent.getIntExtra("id", 0);
 
-    mHistoryWiki = intent.getStringExtra("history");
-    mOfficeWiki = intent.getStringExtra("office");
+    Person thisPerson = Person.getPersonById(mId);
 
-    mName.setText(intent.getStringExtra("name"));
-    mTitle.setText(intent.getStringExtra("title") + " of " + intent.getStringExtra("country"));
+    mHistoryWiki = thisPerson.getHistory();
+    mOfficeWiki = thisPerson.getOffice();
+
+    mName.setText(thisPerson.getName());
+    mTitle.setText(thisPerson.getTitle() + " of " + thisPerson.getCountry());
 
     Picasso.with(StudyActivity.this)
-        .load(intent.getStringExtra("photo"))
+        .load(thisPerson.getPhoto())
         .resize(240, 240)
         .centerCrop()
         .transform(new CircleImage())
@@ -77,12 +72,25 @@ public class StudyActivity extends AppCompatActivity {
   @OnClick(R.id.buttonPrevious)
   public void quit() {
     Intent intent = new Intent(StudyActivity.this, StudyActivity.class);
+    if(mId<=0) {
+      mId=Person.LEVEL_3;
+    } else {
+      mId--;
+    }
+    intent.putExtra("id", mId);
     startActivity(intent);
   }
 
   @OnClick(R.id.buttonNext)
   public void next() {
     Intent intent = new Intent(StudyActivity.this, StudyActivity.class);
+    if(mId>=Person.LEVEL_3) {
+      mId=0;
+    } else {
+      mId++;
+    }
+    mId++;
+    intent.putExtra("id", mId);
     startActivity(intent);
   }
 }
