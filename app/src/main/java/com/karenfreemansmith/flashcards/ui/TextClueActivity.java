@@ -69,34 +69,63 @@ public class TextClueActivity extends AppCompatActivity {
             Log.d("4: ", clueText);
         }
 
-
         mClue.setText(clueText);
 
-        Picasso.with(TextClueActivity.this)
+        if(Person.getPersonById(mQuestion.getPerson1()).getPhoto().equals("nophoto")) {
+            Picasso.with(TextClueActivity.this)
+                .load(R.drawable.nophoto)
+                .resize(180, 180)
+                .centerCrop()
+                .into(mA);
+        } else {
+            Picasso.with(TextClueActivity.this)
                 .load(Person.getPersonById(mQuestion.getPerson1()).getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mA);
+        }
 
-        Picasso.with(TextClueActivity.this)
+        if(Person.getPersonById(mQuestion.getPerson2()).getPhoto().equals("nophoto")) {
+            Picasso.with(TextClueActivity.this)
+                .load(R.drawable.nophoto)
+                .resize(180, 180)
+                .centerCrop()
+                .into(mB);
+        } else {
+            Picasso.with(TextClueActivity.this)
                 .load(Person.getPersonById(mQuestion.getPerson2()).getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mB);
+        }
 
-        Picasso.with(TextClueActivity.this)
+        if(Person.getPersonById(mQuestion.getPerson3()).getPhoto().equals("nophoto")) {
+            Picasso.with(TextClueActivity.this)
+                .load(R.drawable.nophoto)
+                .resize(180, 180)
+                .centerCrop()
+                .into(mC);
+        } else {
+            Picasso.with(TextClueActivity.this)
                 .load(Person.getPersonById(mQuestion.getPerson3()).getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mC);
+        }
 
-        Picasso.with(TextClueActivity.this)
+        if(Person.getPersonById(mQuestion.getPerson4()).getPhoto().equals("nophoto")) {
+            Picasso.with(TextClueActivity.this)
+                .load(R.drawable.nophoto)
+                .resize(180, 180)
+                .centerCrop()
+                .into(mD);
+        } else {
+            Picasso.with(TextClueActivity.this)
                 .load(Person.getPersonById(mQuestion.getPerson4()).getPhoto())
                 .resize(180, 180)
                 .centerCrop()
                 .into(mD);
-
-
+        }
     }
     private void increaseScore() {
         int score = Integer.parseInt(mScore);

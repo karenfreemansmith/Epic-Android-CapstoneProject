@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.support.annotation.DrawableRes;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -56,12 +57,16 @@ public class DetailViewActivity extends AppCompatActivity {
         mName.setText(thisPerson.getName());
         mTitle.setText(thisPerson.getTitle() + " of " + thisPerson.getCountry());
 
-        Picasso.with(DetailViewActivity.this)
-            .load(thisPerson.getPhoto())
-            .resize(240, 240)
-            .centerCrop()
-            .transform(new CircleImage())
-            .into(mPortrait);
+        if(thisPerson.getPhoto().equals("nophoto")) {
+            mPortrait.setImageResource(R.drawable.nophoto);
+        } else {
+            Picasso.with(DetailViewActivity.this)
+                .load(thisPerson.getPhoto())
+                .resize(240, 240)
+                .centerCrop()
+                .transform(new CircleImage())
+                .into(mPortrait);
+        }
     }
 
     @OnClick(R.id.buttonAboutPerson)

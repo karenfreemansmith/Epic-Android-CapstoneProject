@@ -63,11 +63,20 @@ public class PhotoClueActivity extends AppCompatActivity {
             clueUrl=Person.getPersonById(mQuestion.getPerson4()).getPhoto();
         }
 
-        Picasso.with(PhotoClueActivity.this)
-                .load(clueUrl)
-                .resize(360, 360)
+        if(clueUrl.equals("nophoto")) {
+            //mClue.setImageResource(R.drawable.nophoto);
+            Picasso.with(PhotoClueActivity.this)
+                .load(R.drawable.nophoto)
+                .resize(360,360)
                 .centerCrop()
                 .into(mClue);
+        } else {
+            Picasso.with(PhotoClueActivity.this)
+                .load(clueUrl)
+                .resize(360,360)
+                .centerCrop()
+                .into(mClue);
+        }
 
         mA.setText(Person.getPersonById(mQuestion.getPerson1()).getName());
         mB.setText(Person.getPersonById(mQuestion.getPerson2()).getName());

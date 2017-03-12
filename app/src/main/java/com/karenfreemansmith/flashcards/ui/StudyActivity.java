@@ -49,12 +49,16 @@ public class StudyActivity extends AppCompatActivity {
     mName.setText(thisPerson.getName());
     mTitle.setText(thisPerson.getTitle() + " of " + thisPerson.getCountry());
 
-    Picasso.with(StudyActivity.this)
-        .load(thisPerson.getPhoto())
-        .resize(240, 240)
-        .centerCrop()
-        .transform(new CircleImage())
-        .into(mPortrait);
+    if(thisPerson.getPhoto().equals("nophoto")) {
+      mPortrait.setImageResource(R.drawable.nophoto);
+    } else {
+      Picasso.with(StudyActivity.this)
+          .load(thisPerson.getPhoto())
+          .resize(240, 240)
+          .centerCrop()
+          .transform(new CircleImage())
+          .into(mPortrait);
+    }
   }
 
   @OnClick(R.id.buttonAboutPerson)
@@ -89,7 +93,6 @@ public class StudyActivity extends AppCompatActivity {
     } else {
       mId++;
     }
-    mId++;
     intent.putExtra("id", mId);
     startActivity(intent);
   }
