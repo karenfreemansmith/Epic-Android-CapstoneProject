@@ -10,21 +10,22 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity"/>
-        <activity android:name=".ui.NewAccountActivity"/>
-        <activity android:name=".ui.LoginActivity">
+        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.NewAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.LoginActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.PhotoClueActivity"/>
-        <activity android:name=".ui.TextClueActivity"/>
-        <activity android:name=".ui.HighScoresActivity"/>
-        <activity android:name=".ui.DetailViewActivity"/>
-        <activity android:name=".ui.StudyActivity">
-        </activity>
+
+        <activity android:name=".ui.PhotoClueActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.TextClueActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.HighScoresActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.DetailViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.StudyActivity" android:screenOrientation="portrait" />
     </application>
 
 </manifest>
+

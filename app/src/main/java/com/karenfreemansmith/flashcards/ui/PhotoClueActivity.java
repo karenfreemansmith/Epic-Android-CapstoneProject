@@ -21,6 +21,12 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class PhotoClueActivity extends AppCompatActivity {
+    private static final String KEY_A = "KEY_A";
+    private static final String KEY_B = "KEY_B";
+    private static final String KEY_C = "KEY_C";
+    private static final String KEY_D = "KEY_D";
+    private static final String KEY_CORRECT = "KEY_CORRECT";
+
     @Bind(R.id.imageViewClue) ImageView mClue;
     @Bind(R.id.buttonA) Button mA;
     @Bind(R.id.buttonB) Button mB;
@@ -33,6 +39,33 @@ public class PhotoClueActivity extends AppCompatActivity {
     private String mScore;
     private String mTotal;
     private int mLevel;
+    private int mAid;
+    private int mBid;
+    private int mCid;
+    private int mDid;
+    private int mCorrectId=-1;
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt(KEY_A, mAid);
+        outState.putInt(KEY_B, mBid);
+        outState.putInt(KEY_C, mCid);
+        outState.putInt(KEY_D, mDid);
+        outState.putInt(KEY_CORRECT, mCorrectId);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        mAid = savedInstanceState.getInt(KEY_A);
+        mBid = savedInstanceState.getInt(KEY_B);
+        mCid = savedInstanceState.getInt(KEY_C);
+        mDid = savedInstanceState.getInt(KEY_D);
+        mCorrectId = savedInstanceState.getInt(KEY_CORRECT);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,20 +80,30 @@ public class PhotoClueActivity extends AppCompatActivity {
         mLevel = Integer.parseInt(mSharedPreferences.getString(Constants.PREFERENCES_LEVEL_KEY, null));
         getSupportActionBar().setTitle("News Worthy - Score: " + mScore + "/" + mTotal);
 
-        mQuestion = new Question(mLevel);
-        String clueUrl="http://allsoulschurch.org/media/1811/avatar_blank_male_300-390x390.jpg";
-        // set clue = "correct" person...
-        if(mQuestion.getPerson1()==mQuestion.getCorrectAnswer()) {
-            clueUrl=Person.getPersonById(mQuestion.getPerson1()).getPhoto();
+        //Toast.makeText(PhotoClueActivity.this, mCorrectId, Toast.LENGTH_LONG).show();
+        if(mCorrectId==-1) {
+            mQuestion = new Question(mLevel);
         }
-        if(mQuestion.getPerson2()==mQuestion.getCorrectAnswer()) {
-            clueUrl=Person.getPersonById(mQuestion.getPerson2()).getPhoto();
+
+
+        String clueUrl="nophoto";
+        mCorrectId = mQuestion.getCorrectAnswer();
+        mAid = mQuestion.getPerson1();
+        mBid = mQuestion.getPerson2();
+        mCid = mQuestion.getPerson3();
+        mDid = mQuestion.getPerson4();
+
+        if(mQuestion.getPerson1() == mCorrectId) {
+            clueUrl=Person.getPersonById(mAid).getPhoto();
         }
-        if(mQuestion.getPerson3()==mQuestion.getCorrectAnswer()) {
-            clueUrl=Person.getPersonById(mQuestion.getPerson3()).getPhoto();
+        if(mQuestion.getPerson2() == mCorrectId) {
+            clueUrl=Person.getPersonById(mBid).getPhoto();
         }
-        if(mQuestion.getPerson4()==mQuestion.getCorrectAnswer()) {
-            clueUrl=Person.getPersonById(mQuestion.getPerson4()).getPhoto();
+        if(mQuestion.getPerson3() == mCorrectId) {
+            clueUrl=Person.getPersonById(mCid).getPhoto();
+        }
+        if(mQuestion.getPerson4() == mCorrectId) {
+            clueUrl=Person.getPersonById(mDid).getPhoto();
         }
 
         if(clueUrl.equals("nophoto")) {
@@ -78,10 +121,10 @@ public class PhotoClueActivity extends AppCompatActivity {
                 .into(mClue);
         }
 
-        mA.setText(Person.getPersonById(mQuestion.getPerson1()).getName());
-        mB.setText(Person.getPersonById(mQuestion.getPerson2()).getName());
-        mC.setText(Person.getPersonById(mQuestion.getPerson3()).getName());
-        mD.setText(Person.getPersonById(mQuestion.getPerson4()).getName());
+        mA.setText(Person.getPersonById(mAid).getName());
+        mB.setText(Person.getPersonById(mBid).getName());
+        mC.setText(Person.getPersonById(mCid).getName());
+        mD.setText(Person.getPersonById(mDid).getName());
     }
 
     @OnClick(R.id.buttonA)
@@ -94,7 +137,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("id", mQuestion.getPerson1());
+        intent.putExtra("id", mCid);
         startActivity(intent);
     }
 
@@ -108,7 +151,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("id", mQuestion.getPerson2());
+        intent.putExtra("id", mBid);
         startActivity(intent);
     }
 
@@ -122,7 +165,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("id", mQuestion.getPerson3());
+        intent.putExtra("id", mCid);
         startActivity(intent);
     }
 
@@ -136,7 +179,7 @@ public class PhotoClueActivity extends AppCompatActivity {
         }
         increaseTotal();
         Intent intent = new Intent(PhotoClueActivity.this, DetailViewActivity.class);
-        intent.putExtra("id", mQuestion.getPerson4());
+        intent.putExtra("id", mDid);
         startActivity(intent);
     }
 
