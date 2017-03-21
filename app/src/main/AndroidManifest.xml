@@ -3,6 +3,7 @@
           package="com.karenfreemansmith.flashcards">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
 
     <application
         android:allowBackup="true"
@@ -10,16 +11,12 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.NewAccountActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ui.LoginActivity" android:screenOrientation="portrait">
+        <activity android:name=".ui.MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
         <activity android:name=".ui.PhotoClueActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.TextClueActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ui.HighScoresActivity" android:screenOrientation="portrait"/>

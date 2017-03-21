@@ -134,12 +134,4 @@ public class HighScoresActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @OnClick(R.id.buttonLogout)
-    public void logout() {
-        FirebaseAuth.getInstance().signOut();
-        Intent intent = new Intent(HighScoresActivity.this, LoginActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-        finish();
-    }
 }
