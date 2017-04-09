@@ -6,6 +6,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -144,10 +145,14 @@ public class TextClueActivity extends AppCompatActivity {
     @OnClick(R.id.imageButtonA)
     public void chooseA() {
         if(mQuestion.getPerson1()==mQuestion.getCorrectAnswer()) {
-            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
             increaseScore();
         } else {
-            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
         }
         increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
@@ -158,10 +163,14 @@ public class TextClueActivity extends AppCompatActivity {
     @OnClick(R.id.imageButtonB)
     public void chooseB() {
         if(mQuestion.getPerson2()==mQuestion.getCorrectAnswer()) {
-            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
             increaseScore();
         } else {
-            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
         }
         increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
@@ -172,10 +181,14 @@ public class TextClueActivity extends AppCompatActivity {
     @OnClick(R.id.imageButtonC)
     public void chooseC() {
         if(mQuestion.getPerson3()==mQuestion.getCorrectAnswer()) {
-            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
             increaseScore();
         } else {
-            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
         }
         increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);
@@ -186,10 +199,14 @@ public class TextClueActivity extends AppCompatActivity {
     @OnClick(R.id.imageButtonD)
     public void chooseD() {
         if(mQuestion.getPerson4()==mQuestion.getCorrectAnswer()) {
-            Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Congratulations, that is the right answer!", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
             increaseScore();
         } else {
-            Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG).show();
+            Toast toast = Toast.makeText(TextClueActivity.this, "Sorry, you need to study more!", Toast.LENGTH_LONG);
+            toast.setGravity(Gravity.TOP|Gravity.LEFT,0,0);
+            toast.show();
         }
         increaseTotal();
         Intent intent = new Intent(TextClueActivity.this, DetailViewActivity.class);

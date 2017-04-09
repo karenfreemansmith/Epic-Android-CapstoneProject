@@ -211,7 +211,7 @@ public class Person {
         people[11] = new Person("Theresa May",
             "Prime Minister",
             "The United Kingdom",
-            "https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Theresa_May_UK_Home_Office_%28cropped%29.jpg/220px-Theresa_May_UK_Home_Office_%28cropped%29.jpg",
+            "https://commons.wikimedia.org/wiki/File:Theresa_May.png",
             "https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom",
             "https://en.wikipedia.org/wiki/Theresa_May",
             "https://en.wikipedia.org/wiki/File:Flag_of_the_United_Kingdom.svg",
