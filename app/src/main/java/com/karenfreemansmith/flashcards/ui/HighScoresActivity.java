@@ -26,7 +26,7 @@ public class HighScoresActivity extends AppCompatActivity {
     private SharedPreferences mSharedPreferences;
     private SharedPreferences.Editor mEditor;
 
-    private String mUser = "KAS";
+    private String mUser = "";
     private String mHighScores[]=new String[10];
     private String mScore;
     private String mTotal;
@@ -41,12 +41,17 @@ public class HighScoresActivity extends AppCompatActivity {
         mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         mEditor = mSharedPreferences.edit();
 
-//        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-//        mUser = user.getDisplayName();
-
         mScore = mSharedPreferences.getString(Constants.PREFERENCES_SCORE_KEY, null);
         mTotal = mSharedPreferences.getString(Constants.PREFERENCES_TOTAL_KEY, null);
 
+        // get latest score and compare to list to see if it belongs in the list
+        float mTop = Float.parseFloat(mScore);
+        float mBottom = Float.parseFloat(mTotal);
+
+        //mPercentScore = Double.parseDouble(mScore)/Double.parseDouble(mTotal);
+        mPercentScore = (mTop/mBottom)*100;
+
+        // Get list of high scores
         mHighScores[0] = mSharedPreferences.getString(Constants.PREFERENCES_HIGHSCORE01_KEY, null);
         mHighScores[1] = mSharedPreferences.getString(Constants.PREFERENCES_HIGHSCORE02_KEY, null);
         mHighScores[2] = mSharedPreferences.getString(Constants.PREFERENCES_HIGHSCORE03_KEY, null);
@@ -64,12 +69,7 @@ public class HighScoresActivity extends AppCompatActivity {
             }
         }
 
-        // get latest score and compare to list to see if it belongs in the list
-        float mTop = Float.parseFloat(mScore);
-        float mBottom = Float.parseFloat(mTotal);
-
-        //mPercentScore = Double.parseDouble(mScore)/Double.parseDouble(mTotal);
-        mPercentScore = (mTop/mBottom)*100;
+        // Check for new high score
         for(int i=0; i<mHighScores.length; i++) {
             //for resetting scores if neeed:
             //  mHighScores[i]="0.1";
@@ -80,22 +80,24 @@ public class HighScoresActivity extends AppCompatActivity {
             }
         }
 
-        // display scores with list adapter
+            // Get name if high score
+            // Insert new high score in list
+            // Save new list
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE01_KEY, mHighScores[0]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE02_KEY, mHighScores[1]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE03_KEY, mHighScores[2]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE04_KEY, mHighScores[3]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE05_KEY, mHighScores[4]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE06_KEY, mHighScores[5]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE07_KEY, mHighScores[6]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE08_KEY, mHighScores[7]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE09_KEY, mHighScores[8]).apply();
+            mEditor.putString(Constants.PREFERENCES_HIGHSCORE10_KEY, mHighScores[9]).apply();
+
+        // Show list
         mListView = (ListView) findViewById(R.id.listView);
         HighScoreAdapter adapter = new HighScoreAdapter(this, android.R.layout.simple_list_item_1, mHighScores, mUser);
         mListView.setAdapter(adapter);
-
-        // save new scores to shared preferences
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE01_KEY, mHighScores[0]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE02_KEY, mHighScores[1]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE03_KEY, mHighScores[2]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE04_KEY, mHighScores[3]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE05_KEY, mHighScores[4]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE06_KEY, mHighScores[5]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE07_KEY, mHighScores[6]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE08_KEY, mHighScores[7]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE09_KEY, mHighScores[8]).apply();
-        mEditor.putString(Constants.PREFERENCES_HIGHSCORE10_KEY, mHighScores[9]).apply();
     }
 
     @OnClick(R.id.buttonPlayAgain)
