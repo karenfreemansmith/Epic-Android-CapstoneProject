@@ -132,7 +132,7 @@ public class HighScoresActivity extends AppCompatActivity {
 
     @OnClick(R.id.buttonStudy)
     public void test() {
-        Intent intent = new Intent(HighScoresActivity.this, StudyActivity.class);
+        Intent intent = new Intent(HighScoresActivity.this, ReviewActivity.class);
         startActivity(intent);
     }
 

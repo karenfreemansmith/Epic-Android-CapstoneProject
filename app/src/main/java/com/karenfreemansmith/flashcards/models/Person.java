@@ -119,6 +119,10 @@ public class Person {
         return rand;
     }
 
+    public static Person[] getPeople() {
+        return createArray();
+    }
+
     private static Person[] createArray() {
         Person[] people = new Person[396];
         //Add people to array...
