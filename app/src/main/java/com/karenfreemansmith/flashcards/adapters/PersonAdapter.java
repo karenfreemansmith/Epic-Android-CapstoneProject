@@ -23,14 +23,14 @@ import java.util.Collections;
  */
 
 public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonViewHolder> {
-  private Person[] mPeople;
-  private ArrayList<Person> mItems;
+  private Person[] mCopy;
+  private ArrayList<Person> mPeople = new ArrayList<>();
   private Context mContext;
 
   public PersonAdapter(Context context, Person[] people) {
     mContext = context;
-    mPeople = people;
-    //Collections.addAll(mItems, mPeople);
+    mCopy = people;
+    Collections.addAll(mPeople, mCopy);
   }
 
   public class PersonViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -85,32 +85,28 @@ public class PersonAdapter extends RecyclerView.Adapter<PersonAdapter.PersonView
 
   @Override
   public void onBindViewHolder(PersonAdapter.PersonViewHolder holder, int position) {
-    holder.bindPerson(mPeople[position]);
+    holder.bindPerson(mPeople.get(position));
   }
 
   @Override
   public int getItemCount() {
-    return mPeople.length;
+    return mPeople.size();
   }
 
   public void filter(String text) {
-//    Toast.makeText(mContext, "in filter: start", Toast.LENGTH_SHORT).show();
-//    mItems.clear();
-//    Toast.makeText(mContext, "in filter: clear", Toast.LENGTH_SHORT).show();
+    mPeople.clear();
     if(text.isEmpty()) {
-//      Collections.addAll(mItems, mPeople);
-//      Toast.makeText(mContext, "in filter: add all to new arraylist" + text, Toast.LENGTH_SHORT).show();
+      Collections.addAll(mPeople, mCopy);
     } else {
       text = text.toLowerCase();
-      Toast.makeText(mContext, "in filter: test=" + text, Toast.LENGTH_SHORT).show();
-//      for(Person person: mPeople) {
-//        if(person.getName().toLowerCase().contains(text)) {
-//          mItems.add(person);
-//        }
-//        Toast.makeText(mContext, "in filter: new list created", Toast.LENGTH_SHORT).show();
-//      }
+      for(Person person: mCopy) {
+        if(person!=null) {
+          if(person.getName().toLowerCase().contains(text)) {
+            mPeople.add(person);
+          }
+        }
+      }
     }
-//    notifyDataSetChanged();
-//    Toast.makeText(mContext, "in filter: notifyDataSetChanged", Toast.LENGTH_SHORT).show();
+    notifyDataSetChanged();
   }
 }
